@@ -1,97 +1,30 @@
-<script setup>
-import { ref, computed } from "vue";
-import { Mousewheel, Keyboard } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { event, pageview } from "vue-gtag";
-import { useWindowSize } from "@vueuse/core";
-const { width, height } = useWindowSize();
-import "swiper/css";
-import "swiper/css/mousewheel";
-
-import Home from "./components/Home.vue";
-import FindZima from "./components/FindZima.vue";
-import Help from "./components/Help.vue";
-import CookieTip from "./components/CookieTip.vue";
-
-const swiperRef = ref(null);
-const zimaRef = ref(null);
-const modules = ref([Mousewheel, Keyboard]);
-const activeKeyboard = ref(false);
-
-const onSwiper = (swiper) => {
-  swiperRef.value = swiper;
-};
-
-
-const onSlideChange = (swiper) => {
-  if (swiper.activeIndex == 1) {
-    activeKeyboard.value = true;
-    zimaRef.value.init();
-  } else {
-    activeKeyboard.value = false;
-    zimaRef.value.reset();
-  }
-
-  switch (swiper.activeIndex) {
-    case 0:
-      pageview("/home");
-      break;
-    case 1:
-      pageview("/search");
-      break;
-    case 2:
-      pageview("/help");
-      break;
-    default:
-      break;
-  }
-};
-
-const gotoSlide = (index) => {
-  swiperRef.value.slideTo(index);
-};
-</script>
-
 <template>
-  <swiper
-    :slides-per-view="1"
-    :direction="'vertical'"
-    :mousewheel="{
-      thresholdDelta: 20,
-    }"
-    :allow-touch-move="width < 1024"
-    keyboard
-    :modules="modules"
-    @init="onSwiper"
-    @slideChangeTransitionEnd="onSlideChange"
-  >
-    <swiper-slide>
-      <home @gotoSlide="gotoSlide" />
-    </swiper-slide>
-    <swiper-slide>
-      <find-zima
-        ref="zimaRef"
-        :active="activeKeyboard"
-        @gotoSlide="gotoSlide"
-      />
-    </swiper-slide>
-    <swiper-slide>
-      <help />
-    </swiper-slide>
-  </swiper>
-  <cookie-tip />
+  <div class="wrapper">
+    <h3 class="text-[34px] px-[80px] mb-[40px]">Start using your Zima devices</h3>
+    <div class="flex flex-row gap-[4px] ">
+      <MainCard  class="flex-1" v-for="item in cardArry" :title="item.title" :index="item.index" :description="item.description" >
+      <div>这里是个插槽</div>
+      </MainCard>
+    </div>
+    <div class="flex px-[80px] bg-[#292929] justify-between rounded-[14px] py-[20px] text-white mt-[4px]">
+      <h4 class="text-[20px] leading-[24px]">Explore Zima</h4>
+      <p>Visit <a>ZimaSpace</a>  to explore the next generation of digital asset management.</p>
+    </div>
+    <div class="text-center text-[12px] mt-[24px] opacity-80 ">© 2020-2024 IceWhale Technology Limited. All rights reserved.</div>
+  </div>
 </template>
-
-<style lang="scss" scoped>
-.swiper {
-  width: 100%;
-  height: 100%;
-  .swiper-slide {
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+<script setup>
+import MainCard from './components/MainCard.vue'
+const cardArry = [
+  {
+    title:'Download and install ZimaClient',
+    index:1,
+    description: 'Download and install the ZimaClient client. After launching the client, click on "Scan and connect to Zima". The system will automatically scan and start the initialization process for the new device.'
+  },
+  {
+    title:'Scan and connect to Devices',
+    index:2,
+    description: 'If you are initializing from a mobile device or unable to download and install the ZimaClient client, please proceed with the initialization process by clicking the button below.'
   }
-}
-</style>
+]
+</script>

@@ -12,19 +12,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  /* css变量定义 */
-  --color-primary:#0057FF
 }
 
 a {
   font-weight: 500;
-  color: var(--color-primary);
+  color: #646cff;
   text-decoration: inherit;
-  cursor: pointer;
 }
 a:hover {
-  color: var(--color-primary);
+  color: #535bf2;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
 }
 
 body {
@@ -50,7 +55,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--color-primary);
+  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
@@ -62,15 +67,16 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1328px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 24px;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #1a1a1a;
-    background-color: rgb(225,225,225);
+    color: #213547;
+    background-color: #ffffff;
   }
   a:hover {
     color: #747bff;

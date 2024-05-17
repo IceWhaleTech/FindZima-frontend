@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import i18n from './i18n'
+import './assets/scss/app.scss'
 import App from './App.vue' 
-import './index.css'
-import './style.css'
+
 import VueGtag from "vue-gtag";
 
 createApp(App).use(VueGtag, {

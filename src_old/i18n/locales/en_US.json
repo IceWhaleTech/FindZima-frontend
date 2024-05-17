@@ -1,0 +1,66 @@
+{
+  "home": {
+    "title": "Connect to Zima",
+    "mac-client": {
+      "title": "MacOS Client",
+      "desc": "Compatible with MacOS v15.1 and above, the client supports local connection, remote access, and file backup functions.",
+      "button": "Download"
+    },
+    "win-client": {
+      "title": "Windows Client",
+      "desc": "Compatible with Windows 7 and above, the client supports local connection, remote access, and file backup functions.",
+      "button": "Download"
+    },
+    "footer": {
+      "title": "Quick scan"
+    }
+  },
+  "help": {
+    "title": "Unable to Connect?",
+    "doc-card": {
+      "title": "Documents",
+      "desc": "This document demonstrates two other ways to connect to a Zima device within a complex network situation.",
+      "button": "Visit"
+    },
+    "communtity-card": {
+      "title": "Community<span class=\"only-desktop\"> for Support</span>",
+      "desc": "Join a mutually supportive community where 3,000+ Zima users are eager to help and access a full range of Q&A around connection issues.",
+      "button": "Join"
+    },
+    "footer": {
+      "link-text1": "ZimaBoard",
+      "link-text2": "ZimaBlade",
+      "link-text3": "ZimaCube",
+      "copyrights": "Copyright © 2021-2024 IceWhale Tech. All Rights Reserved."
+    }
+  },
+  "search": {
+    "title": "Searching for Zima devices",
+    "scanning-card": {
+      "title": "Scanning...",
+      "desc": "Now scanning the LAN, please ensure your device is powered, and the network cable is connected. If the network environment is complicated, please try other connection methods."
+    },
+    "error-card": {
+      "title": "NO DEVICE FOUND IN LAN",
+      "desc": "For unknown reasons, no device is found. We recommend installing the client or clicking the support button below.",
+      "button": "Rescan"
+    },
+    "device-card": {
+      "ip": "IP Address:",
+      "button": "Access"
+    },
+    "footer": {
+      "title": "Support"
+    }
+  },
+  "common": {
+    "toast": {
+      "copied": "Copied"
+    }
+  },
+  "cookie-tip":{
+    "text": "By closing this message, you consent to Zima's use of cookies on this device in accordance with its cookies policy, unless you have disabled them through your browser settings.",
+    "button1": "Accept",
+    "button2": "Reject"
+  }
+}
