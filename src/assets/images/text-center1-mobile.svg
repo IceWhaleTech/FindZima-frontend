@@ -1,0 +1,16 @@
+<svg width="352" height="256" viewBox="0 0 352 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M232.207 0.5H351.5V72.7032L340.761 78.5611L340.5 78.7032V79V178V178.297L340.761 178.439L351.5 184.297V255.5H231.207L223.354 247.646L223.207 247.5H223H129H128.793L128.646 247.646L120.793 255.5H0.5V16.2071L16.2071 0.5H121.793L129.646 8.35355L129.793 8.5H130H224H224.207L224.354 8.35355L232.207 0.5Z" stroke="#E4E8EC"/>
+<path d="M177 244H221L223 246H175L177 244Z" fill="#E4E8EC"/>
+<path d="M92 244H126.5L118.5 252H92V244Z" fill="#E4E8EC"/>
+<rect width="20" height="8" transform="matrix(-1 0 0 1 90 244)" fill="#E4E8EC"/>
+<rect width="20" height="8" transform="matrix(-1 0 0 1 68 244)" fill="#E4E8EC"/>
+<rect width="20" height="8" transform="matrix(-1 0 0 1 46 244)" fill="#E4E8EC"/>
+<rect width="20" height="8" transform="matrix(-1 0 0 1 24 244)" fill="#E4E8EC"/>
+<path d="M260 244H225.5L233.5 252H260V244Z" fill="#E4E8EC"/>
+<rect x="262" y="244" width="20" height="8" fill="#E4E8EC"/>
+<rect x="284" y="244" width="20" height="8" fill="#E4E8EC"/>
+<rect x="306" y="244" width="20" height="8" fill="#E4E8EC"/>
+<rect x="328" y="244" width="20" height="8" fill="#E4E8EC"/>
+<path d="M348 186L346 185V244H348V186Z" fill="#E4E8EC"/>
+<path d="M174 244H131L129 246H172L174 244Z" fill="#D9D9D9"/>
+</svg>

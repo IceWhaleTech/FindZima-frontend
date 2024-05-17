@@ -1,0 +1,572 @@
+:root {
+    --background-color: rgb(13, 13, 13);
+}
+
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Rajdhani";
+    background-color: var(--background-color);
+    overflow: hidden;
+    color: rgba(228, 232, 236, 1);
+}
+
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.only-mobile {
+    display: none;
+}
+
+
+.main-contents {
+    max-width: 976px;
+    margin: 0 auto;
+}
+
+
+.common-card {
+    .title {
+        color: rgba(228, 232, 236, 1);
+    }
+
+    .desc {
+        margin-right: 3rem;
+        font-family: "Mulish";
+        font-size: 0.875rem;
+        line-height: 18px;
+
+        &.is-align-items-center {
+            align-items: end !important;
+            justify-content: space-between;
+        }
+
+    }
+
+    .button {
+        width: 100px;
+        height: 32px;
+        border-radius: 0;
+        background-image: url("../images/Button-Default.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+        font-family: "Mulish";
+        font-size: 0.875rem;
+        color: rgba(13, 13, 13, 1);
+        border: none;
+
+        &.is-disabled {
+            color: rgba(228, 232, 236, 0.4) !important;
+            position: relative;
+            background-image: url("../images/Button-Disable.svg");
+        }
+    }
+}
+
+.main-card {
+    width: 480px;
+    height: 264px;
+    position: relative;
+    padding: 3rem 0 3rem 3rem;
+    box-sizing: border-box;
+
+    &.card1 {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 480px;
+            height: 264px;
+            background: url("../images/text-left-wide.svg") no-repeat;
+            background-size: 100% 100%;
+            opacity: 0.4;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+    }
+
+    &.card2 {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 480px;
+            height: 264px;
+            background: url("../images/text-right-wide.svg") no-repeat;
+            background-size: 100% 100%;
+            opacity: 0.4;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+    }
+
+    &:hover {
+        &:before {
+            opacity: 0.8;
+        }
+    }
+
+
+}
+
+.scan-card {
+    width: 784px;
+    height: 322px;
+    position: relative;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 784px;
+        height: 322px;
+        background: url("../images/text-center-wide.svg") no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.4;
+        transition: opacity 0.3s;
+        pointer-events: none;
+    }
+}
+
+.mr-40px {
+    margin-right: 40px !important;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes fade-ani {
+    from {
+        border: rgba(228, 232, 236, 0.8) 2px solid;
+    }
+
+    to {
+        border: rgba(228, 232, 236, 0.4) 2px solid;
+    }
+}
+
+@keyframes rotate-1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.scan-animation {
+    animation: rotate 1.2s ease-in-out infinite;
+}
+
+.image.is-18x18 {
+    height: 18px;
+    width: 18px;
+}
+
+.image {
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.bottom-button {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: rgba(228, 232, 236, 0.8) 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Mulish";
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: rgba(228, 232, 236, 0.8);
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        background: url("../images/circle-border2.svg") no-repeat;
+        background-size: 100% 100%;
+        transform: rotate(45deg);
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: url("../images/circle-border2.svg") no-repeat;
+        background-size: 100% 100%;
+        transition: all 0.5s;
+    }
+
+}
+
+.image:hover {
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    width: 64px !important;
+    height: 64px !important;
+    background: url("../images/button-prev.svg") no-repeat;
+    transition: all 0.2s;
+
+    &::after {
+        content: "" !important;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.swiper-button-next {
+    width: 64px !important;
+    height: 64px !important;
+    background: url("../images/button-next.svg") no-repeat;
+    transition: all 0.2s;
+
+    &::after {
+        content: "" !important;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.action-footer {
+    &:hover {
+        .border {
+            transition: all 0.6s ease-in-out !important;
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        }
+
+        .bottom-button {
+
+            animation: fade-ani 1s ease-in-out infinite alternate;
+
+            &:before {
+                animation: rotate-1 2s linear infinite;
+                animation-direction: reverse;
+            }
+
+            &:after {
+                animation: rotate-1 2s linear infinite;
+            }
+
+        }
+    }
+
+    &:visited {
+        .border {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .bottom-button {
+
+            animation: none;
+
+            &:before {
+                animation: none;
+                animation-direction: reverse;
+            }
+
+            &:after {
+                animation: none;
+            }
+
+        }
+    }
+}
+
+.cookie-tip{
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    width: 100%;
+    z-index: 1000;
+    line-height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(40px);
+    .button-container{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .button {
+        width: 100px;
+        height: 32px;
+        border-radius: 0;
+        background-image: url("../images/Button-Default.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: transparent;
+        font-family: "Mulish";
+        font-size: 0.875rem;
+        color: rgba(13, 13, 13, 1);
+        border: none;
+
+        &.is-disabled {
+            color: rgba(228, 232, 236, 0.4) !important;
+            position: relative;
+            background-image: url("../images/Button-Disable.svg");
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1136px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        max-width: 944px !important;
+    }
+
+    .main-contents {
+        max-width: 944px;
+    }
+
+    .main-card {
+        width: 464px;
+        height: 260px;
+
+        &.card1 {
+            &:before {
+                width: 464px;
+                height: 260px;
+                background: url("../images/text-left-desktop.svg") no-repeat;
+            }
+        }
+
+        &.card2 {
+            &:before {
+                width: 464px;
+                height: 260px;
+                background: url("../images/text-right-desktop.svg") no-repeat;
+            }
+        }
+    }
+
+    .scan-card {
+        width: 656px;
+        height: 290px;
+
+        &:before {
+            width: 656px;
+            height: 290px;
+            background: url("../images/text-center-desktop.svg") no-repeat;
+        }
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .container {
+        max-width: 375px !important;
+    }
+
+    .main-contents {
+        max-width: 352px;
+    }
+
+    .main-card {
+        width: 352px;
+        height: 208px;
+        padding: 2rem 0 2rem 2rem;
+
+        .desc {
+            margin-right: 2rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-bottom: 1rem !important;
+        }
+
+        &.card1 {
+            &:before {
+                width: 352px;
+                height: 208px;
+                background: url("../images/text-left-mobile.svg") no-repeat;
+            }
+        }
+
+        &.card2 {
+            &:before {
+                width: 352px;
+                height: 208px;
+                background: url("../images/text-right-mobile.svg") no-repeat;
+            }
+        }
+
+        .title.is-3 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .scan-card {
+        width: 352px;
+        height: 256px;
+        padding: 2rem;
+
+        .scan-image {
+            img {
+                width: 88px;
+                height: 88px;
+            }
+        }
+
+        .title.is-3 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+
+        .desc {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-right: 0;
+        }
+
+        .mr-40px {
+            margin-right: 16px !important;
+        }
+
+        &:before {
+            width: 352px;
+            height: 256px;
+            background: url("../images/text-center1-mobile.svg") no-repeat;
+        }
+    }
+
+
+    .help-section {
+        .main-card {
+            width: 352px;
+            height: 224px;
+            padding: 2rem 0 2rem 2rem;
+
+            .desc {
+                margin-right: 2rem;
+                font-size: 0.75rem;
+                line-height: 1rem;
+                margin-bottom: 1rem !important;
+            }
+
+            &.card1 {
+                &:before {
+                    width: 352px;
+                    height: 224px;
+                    background: url("../images/text-center2-mobile.svg") no-repeat !important;
+                }
+            }
+
+            &.card2 {
+                &:before {
+                    width: 352px;
+                    height: 224px;
+                    background: url("../images/text-center2-mobile.svg") no-repeat !important;
+                }
+            }
+
+            .title.is-3 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        .button-container {
+            height: 46px !important;
+        }
+    }
+
+    .device-card {
+        width: 352px;
+        height: 256px;
+        padding: 3rem 2rem 3rem 1.5rem;
+
+        &.card1 {
+            &:before {
+                width: 352px;
+                height: 256px;
+                background: url("../images/text-center1-mobile.svg") no-repeat !important;
+            }
+        }
+
+        .desc {
+            margin-right: 0 !important;
+        }
+
+        .mr-5 {
+            margin-right: 1rem !important;
+        }
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .copyrights {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .swiper-button-prev {
+        width: 24px !important;
+        height: 24px !important;
+        background: url("../images/button-prev-mobile.svg") no-repeat;
+
+    }
+
+    .swiper-button-next {
+        width: 24px !important;
+        height: 24px !important;
+        background: url("../images/button-next-mobile.svg") no-repeat;
+    }
+}
