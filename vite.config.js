@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
+import svgLoader from 'vite-svg-loader'
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  server:{
+    host: '0.0.0.0',
+  },
   plugins: [
     vue(),
+    svgLoader(),
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
@@ -27,8 +33,11 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
   ],
+  css: {
+    postcss: './postcss.config.cjs', // 指定 PostCSS 配置文件
+  },
   test: {
     // 启用类似 jest 的全局测试 API
     globals: true,
