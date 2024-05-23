@@ -3,7 +3,7 @@
     <div v-for="item in cards" class="flex-1 bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4 transition hover:shadow-md"
       :class="{ 'cursor-pointer': item.icon }" @click="handleDownload(item.icon)">
       <h5 class="text-[20px] leading-[24px]">{{ item.title }}</h5>
-      <p class="text-[13px] leading-[16px] opacity-35">{{ item.version }}</p>
+      <p class="text-[13px] leading-[16px] whitespace-nowrap opacity-35">{{ item.version }}</p>
       <div class="mt-[57px]">
         <div class="flex justify-end" v-if="item.icon">
           <figure class="image border p-[11px] rounded-full " :class="currentOS == item.icon ? 'bg-primary' : 'bg-[#EEE]'">
