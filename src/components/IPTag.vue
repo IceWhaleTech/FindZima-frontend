@@ -6,7 +6,7 @@
         <div v-if="ip&&ip.length" class="bg-white border rounded-md px-2 leading-[38px] ml-2 cursor-pointer hover:bg-[#EEE]" title="Copy IP address">
             <template v-for="(item,index) in ip.split('.')">
                 <span>{{ item }}</span>
-                <i v-if="index<3" class="text-[grey]">·</i>
+                <i v-if="index<3" class="opacity-35 mr-[2px]">·</i>
             </template>
         </div>
     </div>

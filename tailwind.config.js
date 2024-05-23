@@ -11,7 +11,9 @@ export default {
     },
     extend: {
       borderColor:{
-        DEFAULT:'#DCDCDC'
+        // DEFAULT:'#DCDCDC'
+        DEFAULT:'rgba(51, 51, 51, 0.13)'
+        
       },
       colors:{
         primary: '#0057FF',

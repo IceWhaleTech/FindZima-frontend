@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row gap-[4px]">
-    <div v-for="item in cards" class="flex-1 bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4"
+    <div v-for="item in cards" class="flex-1 bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4 transition hover:shadow-md"
       :class="{ 'cursor-pointer': item.icon }" @click="handleDownload(item.icon)">
       <h5 class="text-[20px] leading-[24px]">{{ item.title }}</h5>
       <p class="text-[13px] leading-[16px] opacity-35">{{ item.version }}</p>
@@ -12,7 +12,7 @@
           </figure>
         </div>
         <div class="whitespace-nowrap" v-else>
-          <a class="text-[15px] leading-[40px]">
+          <a class="text-[15px] leading-[40px]" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
             <span>Provide ideas</span>
           </a>
         </div>

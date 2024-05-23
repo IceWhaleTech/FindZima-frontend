@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white border rounded-[14px] pt-10 pb-6 px-6 overflow-hidden md:px-20 md:py-[64px]">
+  <div class="bg-white border rounded-[14px] pt-10 pb-4 px-6 overflow-hidden md:px-20 md:pt-[64px] md:pb-[56px]">
     <div class="flex">
       <h3 class="text-[30px] leading-[32px] md:text-[34px] flex-1">{{ title }}</h3>
       <figure class="image hidden lg:block">

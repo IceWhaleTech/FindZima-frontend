@@ -3,7 +3,8 @@ import { computed, ref, onMounted, watch } from "vue";
 import { breakpointsTailwind, useBreakpoints } from "@vueuse/core";
 import menuLinks from "../utils/menuLinks";
 import CloseIcon from "../assets/images/close.svg";
-import MenuIcon from "../assets/images/Menu.svg";
+import MenuIcon from "../assets/images/menu.svg";
+import ArrowLeft from "../assets/images/ArrowLeft.svg";
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const md = computed(() => breakpoints.current().value.includes("md"));
 const showNavbar = ref(true);
@@ -61,8 +62,8 @@ watch(
         <!-- Left -->
         <div class="flex flex-row px-6 md:px-20" :class="{ 'flex-col md:flex-row': showMenu }">
           <!-- Logo -->
-          <div :class="['flex h-[4rem] items-center text-white']">
-            <a href="/">Zima</a>
+          <div :class="['flex h-[4rem] items-center hover:text-white']">
+            <a style="text-decoration: none;" href="https://www.zimaspace.com/">Zima</a>
           </div>
           <!-- Links -->
           <ul class="flex flex-row" :class="{ 'flex-col md:flex-row': showMenu }">
@@ -71,7 +72,7 @@ watch(
               showMenu ? 'h-dvh opacity-100' : 'h-0 opacity-0',
             ]">
               <span v-for="group in menuLinks" :class="[
-                'block cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0',
+                'block cursor-default pt-8 transition-all duration-300 md:pl-8 md:pt-0',
                 'hover:text-white',
                 {
                   'text-white': currentSubmenu == group.title,
@@ -130,14 +131,14 @@ watch(
         ]" @pointerenter="md && (currentSubmenu = group.title)" @pointerleave="md && (currentSubmenu = '')">
           <!-- Back -->
           <button class="pb-8 text-2xl text-white md:hidden" @click="currentSubmenu = ''">
-            <!-- <Icon class="-ml-1" :name="'material-symbols:arrow-left-alt'" /> -->
+            <ArrowLeft v-show="showMenu" />
           </button>
           <!-- Title -->
           <h3 class="pb-4 opacity-50">{{ group.title }}</h3>
           <!-- Links -->
           <ul class="flex flex-col gap-4">
             <li class="transition-transform duration-300 hover:translate-x-1" v-for="link in group.links">
-              <a style="text-decoration: none;" :href="`${link.href}?utm_source=head&utm_medium=menu`" target="_blank">{{
+              <a style="text-decoration: none;" :href="`${link.href}?utm_source=head&utm_medium=menu`" >{{
                 link.title
                 }}</a>
             </li>

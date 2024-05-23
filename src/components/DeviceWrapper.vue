@@ -16,8 +16,8 @@
             :mousewheel="true"
             style="padding: 0 80px;"
           >
-            <swiper-slide v-for="(device, index) in devices" :key="index" >
-              <Device :device="device"></Device>
+            <swiper-slide v-for="(device, index) in devices" :key="index" class="pb-2" >
+              <Device :device="device" class="transition hover:shadow-md"></Device>
             </swiper-slide>
           </swiper>
     </div>

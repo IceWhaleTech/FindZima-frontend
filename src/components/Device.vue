@@ -28,7 +28,7 @@
 import { computed } from "vue"
 import Loading from "./Loading.vue";
 import IPTag from "./IPTag.vue";
-// import copy from "copy-to-clipboard";
+import copy from "copy-to-clipboard";
 import { event } from "vue-gtag";
 import { createToaster } from "@meforma/vue-toaster";
 
@@ -68,15 +68,14 @@ const goto = () => {
 };
 
 const copyTo = () => {
-  window.navigator.clipboard.writeText(initUrl.value);
-  //   event("copy", {
-  //     event_category: "copy",
-  //     event_label: "copy-clipboard",
-  //   });
-  //   copy(initUrl.value, {
-  //     debug: true,
-  //     message: "Press #{key} to copy",
-  //   });
+  event("copy", {
+    event_category: "copy",
+    event_label: "copy-clipboard",
+  });
+  copy(initUrl.value, {
+    debug: true,
+    message: "Press #{key} to copy",
+  });
   toaster.show('Copied');
 };
 </script>
