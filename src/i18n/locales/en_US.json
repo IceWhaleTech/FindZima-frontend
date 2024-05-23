@@ -1,66 +1,37 @@
 {
-  "home": {
-    "title": "Connect to Zima",
-    "mac-client": {
-      "title": "MacOS Client",
-      "desc": "Compatible with MacOS v15.1 and above, the client supports local connection, remote access, and file backup functions.",
-      "button": "Download"
-    },
-    "win-client": {
-      "title": "Windows Client",
-      "desc": "Compatible with Windows 7 and above, the client supports local connection, remote access, and file backup functions.",
-      "button": "Download"
-    },
-    "footer": {
-      "title": "Quick scan"
-    }
-  },
-  "help": {
-    "title": "Unable to Connect?",
-    "doc-card": {
-      "title": "Documents",
-      "desc": "This document demonstrates two other ways to connect to a Zima device within a complex network situation.",
-      "button": "Visit"
-    },
-    "communtity-card": {
-      "title": "Community<span class=\"only-desktop\"> for Support</span>",
-      "desc": "Join a mutually supportive community where 3,000+ Zima users are eager to help and access a full range of Q&A around connection issues.",
-      "button": "Join"
-    },
-    "footer": {
-      "link-text1": "ZimaBoard",
-      "link-text2": "ZimaBlade",
-      "link-text3": "ZimaCube",
-      "copyrights": "Copyright © 2021-2024 IceWhale Tech. All Rights Reserved."
-    }
-  },
-  "search": {
-    "title": "Searching for Zima devices",
-    "scanning-card": {
-      "title": "Scanning...",
-      "desc": "Now scanning the LAN, please ensure your device is powered, and the network cable is connected. If the network environment is complicated, please try other connection methods."
-    },
-    "error-card": {
-      "title": "NO DEVICE FOUND IN LAN",
-      "desc": "For unknown reasons, no device is found. We recommend installing the client or clicking the support button below.",
-      "button": "Rescan"
-    },
-    "device-card": {
-      "ip": "IP Address:",
-      "button": "Access"
-    },
-    "footer": {
-      "title": "Support"
-    }
-  },
   "common": {
+    "title": "Start using your Zima devices",
+    "copyrights": "© 2020-2024 IceWhale Technology Limited. All rights reserved.",
     "toast": {
       "copied": "Copied"
-    }
+    },
+    "cookie-tip": "By closing this message, you consent to Zima's use of cookies on this device in accordance with its cookies policy, unless you have disabled them through your browser settings.",
+    "accept":"Accept",
+    "reject":"Reject"
   },
-  "cookie-tip":{
-    "text": "By closing this message, you consent to Zima's use of cookies on this device in accordance with its cookies policy, unless you have disabled them through your browser settings.",
-    "button1": "Accept",
-    "button2": "Reject"
+  "client":{
+    "title":"Download and install ZimaClient",
+    "desc":"Download and install the ZimaClient client. After launching the client, click on <b>\"Scan and connect to Zima\"</b>. The system will automatically scan and start the initialization process for the new device.",
+    "mobile-title":"ZimaClient for Mobile <b/>will coming soon",
+    "provide":"Provide ideas",
+    "coming": "Coming soon!"
+  },
+  "device":{
+    "title":"Scan and connect to Devices",
+    "desc":"If you are initializing from a mobile device or unable to download and install the ZimaClient client, please proceed with the initialization process by clicking the button below.",
+    "search":"Searching on local network...",
+    "oops":"Oops!",
+    "no-device":"No devices...",
+    "no-device-tip":"Please make sure your Zima device and your equipment are <b>on the same network</b> .",
+    "to-copy":"Copy IP address"
+  },
+  "explore":{
+    "title": "Explore Zima",
+    "desc":"Visit <a {url}>ZimaSpace</a> to explore the next generation of digital asset management."
+  },
+  "help":{
+    "title": "Need any help?",
+    "desc":"If you need any detail or support about your products, please visit <a {urlP}>Product support</a> or <a {urlC}>Contact us</a>",
+    "support": "24/7 All-day tech support <a {url}>IceWhale.community</a>"
   }
 }

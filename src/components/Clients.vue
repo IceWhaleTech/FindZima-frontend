@@ -13,7 +13,7 @@
         </div>
         <div class="whitespace-nowrap" v-else>
           <a class="text-[15px] leading-[40px]" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
-            <span>Provide ideas</span>
+            <span>{{ $t("client.provide") }}</span>
           </a>
         </div>
       </div>
@@ -25,6 +25,9 @@ import { ref, onMounted } from "vue";
 import Mac from "../assets/images/mac.svg";
 import Win from "../assets/images/win.svg";
 import { event } from "vue-gtag";
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n() 
 const cards = [
   {
     title: 'macOS',
@@ -38,9 +41,7 @@ const cards = [
   },
   {
     title: 'Mobile',
-    version: 'Coming soon!',
-    link_text: 'Provide ideas',
-    link_url: 'https://github.com/',
+    version: t('client.coming'),
   }
 ]
 

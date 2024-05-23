@@ -10,6 +10,7 @@ const messages = {
 
 const i18n = createI18n({
     locale: 'en_US',
+    // locale: 'zh_US',
     legacy: false,
     globalInjection: true,
     messages: messages

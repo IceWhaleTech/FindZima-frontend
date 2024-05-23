@@ -3,8 +3,8 @@
     <div class="flex">
       <h3 class="text-[30px] leading-[32px] md:text-[34px] flex-1">{{ title }}</h3>
       <figure class="image hidden lg:block">
-        <img class="h-[120px]" v-if="index == 1" src="../assets/images/1.svg" />
-        <img class="h-[120px]" v-if="index == 2" src="../assets/images/2.svg" />
+        <Icon1 class="h-[120px]" v-if="index == 1" />
+        <Icon2 class="h-[120px]" v-if="index == 2" />
       </figure>
     </div>
     <div class="flex justify-start pt-[36px] pb-[30px]  md:pt-[56px] md:justify-end ">
@@ -14,6 +14,9 @@
   </div>
 </template>
 <script setup>
+import { defineProps } from 'vue'
+import Icon1 from '../assets/images/1.svg'
+import Icon2 from '../assets/images/2.svg'
 const props = defineProps({
   title: {
     type: String,

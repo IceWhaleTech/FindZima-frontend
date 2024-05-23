@@ -1,19 +1,18 @@
 <template>
   <div class="flex  justify-between h-[152px] md:h-[167px] border rounded-lg bg-neutral-50 px-5 py-4 "
-    :class="{ 'cursor-pointer': device }" @click="goto()">
+    >
     <div class="left h-full flex-1 flex flex-col justify-between">
       <template v-if="loading">
-        <h3 class="text-[20px] leading-6 md:text-[30px] md:leading-8">Searching on local network...</h3>
+        <h3 class="text-[20px] leading-6 md:text-[30px] md:leading-8">{{ $t('device.search') }}</h3>
         <IPTag />
       </template>
       <template v-else-if="device">
         <h3 class="text-[20px] leading-6 md:text-[30px] md:leading-8">{{ device.device_name }}</h3>
-        <IPTag class="ml-[-4px] mb-[-4px]" :ip="device && device.lan_ipv4[0] + port" @click.stop="copyTo" />
+        <IPTag class="ml-[-4px] mb-[-4px]" :ip="device && device.lan_ipv4[0] + port" :initUrl="initUrl"/>
       </template>
       <template v-else>
-        <h3 class="text-[20px] leading-6 md:text-[30px] md:leading-8">Oops! <br />No devices...</h3>
-        <p class="leading-5 text-fontLow">Please make sure your Zima device and your equipment are <b
-            class="text-base">on the same network</b> .</p>
+        <h3 class="text-[20px] leading-6 md:text-[30px] md:leading-8">{{ $t('device.oops') }} <br />{{ $t('device.no-device') }}</h3>
+        <p class="description leading-5 text-fontLow" v-html="$t('device.no-device-tip')"></p>
       </template>
     </div>
     <div class="right w-4/12 h-full" v-if="device || loading">
@@ -28,11 +27,7 @@
 import { computed } from "vue"
 import Loading from "./Loading.vue";
 import IPTag from "./IPTag.vue";
-import copy from "copy-to-clipboard";
-import { event } from "vue-gtag";
-import { createToaster } from "@meforma/vue-toaster";
 
-const toaster = createToaster({ position: "bottom" });
 const props = defineProps({
   device: Object,
   loading: Boolean,
@@ -58,24 +53,11 @@ const getAssetsFile = (name) => {
   return new URL(`../assets/images/${url}.svg`, import.meta.url).href;
 };
 
-const goto = () => {
-  if (!initUrl.value) return
-  event("access", {
-    event_category: "access",
-    event_label: "access",
-  });
-  window.open(initUrl.value, "_blank");
-};
 
-const copyTo = () => {
-  event("copy", {
-    event_category: "copy",
-    event_label: "copy-clipboard",
-  });
-  copy(initUrl.value, {
-    debug: true,
-    message: "Press #{key} to copy",
-  });
-  toaster.show('Copied');
-};
+
 </script>
+<style scoped>
+:deep(.description b) {
+  color: #1a1a1a;
+}
+</style>

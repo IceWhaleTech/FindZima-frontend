@@ -1,9 +1,9 @@
 <template>
     <div class="mx-[-80px]">
-        <div v-if="loading" class="px-[80px]">
+        <div v-if="loading" class="px-[80px] pb-2">
           <Device :loading="true"  />
         </div>
-        <div v-else-if="devices.length==0" class="px-[80px]">
+        <div v-else-if="devices.length==0" class="px-[80px] pb-2">
           <Device  />
         </div>
         <swiper
@@ -29,9 +29,11 @@ import { Keyboard , Mousewheel } from "swiper";
 import Device from "./Device.vue";
 import "swiper/css";
 import "swiper/css/navigation";
-const publicPort = 9527;
+
 const websocketProtocol = "wss";
-const webSocketServer = `${websocketProtocol}://www.findzima.com/ws`;
+const host = 'find.zimaspace.com'
+// const host = 'www.findzima.com'
+const webSocketServer = `${websocketProtocol}://${host}/ws`;
 
 const modules = ref([Keyboard,Mousewheel]);
 const socket = ref(null);
