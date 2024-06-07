@@ -8,7 +8,7 @@ export default [
       { title: "ZimaBlade", href: space + "/products/blade-personal-nas" },
       {
         title: "Accessories",
-        href: "https://shop.zimaspace.com/collections/zima-accessories",
+        href: "https://shop.zimaboard.com/collections/zima-accessories?utm_source=head&utm_medium=menu",
       },
       { title: "CasaOS", href: "https://www.casaos.io" },
     ],
@@ -49,7 +49,7 @@ export default [
         title: "Community",
         href: "https://icewhale.community",
       },
-      { title: "Contact", href: "/support/contact" },
+      { title: "Contact", href: space + "/support/contact" },
       {
         title: "Refund Policy",
         href: space + "/support/refund-policy",
@@ -58,7 +58,8 @@ export default [
         title: "Privacy Policy",
         href: space + "/support/privacy-policy",
       },
-      { title: "Terms of Service", href: "/support/terms-of-service" },
+      { title: "Terms of Service", 
+        href: space + "/support/terms-of-service" },
       {
         title: "Shipping Policy",
         href: space + "/support/shipping-policy",
@@ -76,7 +77,7 @@ export default [
         title: "Community",
         href: "https://icewhale.community",
       },
-      { title: "About Us", href: "/about" },
+      { title: "About Us", href: space + "/about" },
       { title: "Blog", href: "https://www.zimaspace.com/blog/" },
       { title: "Distributors", href: space + "/distributors" },
       { title: "Affiliate", href: space + "/affiliate" },
