@@ -5,6 +5,7 @@ import menuLinks from "../utils/menuLinks";
 import CloseIcon from "../assets/images/close.svg";
 import MenuIcon from "../assets/images/menu.svg";
 import ArrowLeft from "../assets/images/ArrowLeft.svg";
+import LangSelect from "./LangSelect.vue";
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const md = computed(() => breakpoints.current().value.includes("md"));
 const showNavbar = ref(true);
@@ -80,7 +81,7 @@ watch(
                   'opacity-100': showMenu,
                 },
               ]" @click="currentSubmenu = group.title" @pointerenter="md && (currentSubmenu = group.title)">
-                {{ group.title }}
+                {{ $t('menu.'+ group.title)  }}
               </span>
             </li>
           </ul>
@@ -88,6 +89,7 @@ watch(
 
         <!-- Right -->
         <ul class="flex h-[4rem] items-center gap-4 text-xl text-white/50">
+          <LangSelect />
           <!-- IconLinks -->
           <li v-for="link in iconLinks" :class="[
             'opacity-0 transition-opacity duration-300 md:opacity-100',
@@ -134,12 +136,12 @@ watch(
             <ArrowLeft v-show="showMenu" />
           </button>
           <!-- Title -->
-          <h3 class="pb-4 opacity-50">{{ group.title }}</h3>
+          <h3 class="pb-4 opacity-50">{{ $t('menu.'+ group.title)  }}</h3>
           <!-- Links -->
           <ul class="flex flex-col gap-4">
             <li class="transition-transform duration-300 hover:translate-x-1" v-for="link in group.links">
               <a style="text-decoration: none;" :href="`${link.href}?utm_source=head&utm_medium=menu`" >{{
-                link.title
+                $t('menu.'+ link.title)
                 }}</a>
             </li>
           </ul>

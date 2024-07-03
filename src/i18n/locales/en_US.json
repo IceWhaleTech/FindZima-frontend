@@ -5,6 +5,7 @@
     "toast": {
       "copied": "Copied"
     },
+    "download": "Download",
     "cookie-tip": "By closing this message, you consent to Zima's use of cookies on this device in accordance with its cookies policy, unless you have disabled them through your browser settings.",
     "accept":"Accept",
     "reject":"Reject"
@@ -12,6 +13,9 @@
   "client":{
     "title":"Download and install ZimaClient",
     "desc":"Download and install the ZimaClient client. After launching the client, click on <b>\"Scan and connect to Zima\"</b>. The system will automatically scan and start the initialization process for the new device.",
+    "tip-start": "If you are temporarily unable to install the ZimaClient, please",
+    "tip-button": "click here",
+    "tip-end": "to perform a web scan.",
     "mobile-title":"ZimaClient for Mobile <b/>will coming soon",
     "provide":"Provide ideas",
     "coming": "Coming soon!"
@@ -33,5 +37,33 @@
     "title": "Need any help?",
     "desc":"If you need any detail or support about your products, please visit <a {urlP}>Product support</a> or <a {urlC}>Contact us</a>",
     "support": "24/7 All-day tech support <a {url}>IceWhale.community</a>"
+  },
+  "menu":{
+    "Zima": "Zima",
+    "Products": "Products",
+    "Resource": "Resource",
+    "Support": "Support",
+    "Explore": "Explore",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "Accessories",
+    "CasaOS": "CasaOS",
+    "Docs": "Docs",
+    "Blog": "Blog",
+    "Media-Servers": "Media Servers",
+    "Personal-NAS": "Personal NAS",
+    "Ad-Blocker": "Ad Blocker",
+    "Discord": "Discord",
+    "Community": "Community",
+    "Contact": "Contact",
+    "Refund-Policy": "Refund Policy",
+    "Privacy-Policy": "Privacy Policy",
+    "Terms-of-Service": "Terms of Service",
+    "Shipping-Policy": "Shipping Policy",
+    "Made-with-IceWhale": "Made with IceWhale",
+    "About-Us": "About Us",
+    "Distributors": "Distributors",
+    "Affiliate": "Affiliate"
   }
 }

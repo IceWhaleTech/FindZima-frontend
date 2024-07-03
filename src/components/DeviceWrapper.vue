@@ -82,6 +82,7 @@ const pushToArr = (arr, obj) => {
   let flag = true;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].hash == obj.hash) {
+      arr[i] = obj // 更新可能更改的信息
       flag = false;
       break;
     }

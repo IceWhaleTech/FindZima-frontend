@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row gap-[4px]">
+  <div v-if="mode == 'row'" class="flex flex-row gap-[4px]">
     <div v-for="item in cards" class="flex-1 bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4 transition hover:shadow-md"
       :class="{ 'cursor-pointer': item.icon }" @click="handleDownload(item.icon)">
       <h5 class="text-[20px] leading-[24px]">{{ item.title }}</h5>
@@ -19,6 +19,32 @@
       </div>
     </div>
   </div>
+  <div v-else class="flex flex-row flex-wrap gap-[4px]">
+    <div v-for="item in cards" class="flex flex-col justify-between bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4 transition"
+      :class="[
+        item.icon?'cursor-pointer hover:shadow-md flex-1 w-1/2 h-[278px]': 'cursor-default w-full h-[122px]',
+        currentOS == item.icon ? 'bg-primary text-white' : 'bg-[#EEE]'
+      ]" @click="handleDownload(item.icon)">
+      <div>
+        <h5 class="text-[30px] leading-[32px]">{{ item.title }}</h5>
+        <p v-if="!item.icon" class="text-[13px] leading-[16px] whitespace-nowrap opacity-35">{{ item.version }}</p>
+      </div>
+      <div>
+        <div class="flex justify-end text-black" v-if="item.icon">
+          <figure class="flex items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE]" >
+            <Mac v-if="item.icon == 'mac'" :style="{ fill: '#3c3c3c' }" />
+            <Win v-if="item.icon == 'win'" :style="{ fill: '#3c3c3c' }" />
+            <a class="ml-1">{{$t('common.download')}}</a>
+          </figure>
+        </div>
+        <div class="whitespace-nowrap flex justify-end" v-else>
+          <a class="text-[15px]  border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+            <span>{{ $t("client.provide") }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
@@ -26,6 +52,12 @@ import Mac from "../assets/images/mac.svg";
 import Win from "../assets/images/win.svg";
 import { event } from "vue-gtag";
 import { useI18n } from 'vue-i18n'
+
+const props = defineProps({
+  mode:{
+    type: String, // row
+  }
+})
 
 const { t } = useI18n() 
 const cards = [

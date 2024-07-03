@@ -1,3 +1,69 @@
 {
-   
+  "common": {
+    "title": "开始使用您的Zima设备",
+    "copyrights": "© 2020-2024 冰鲸科技有限公司。 保留所有权利。",
+    "toast": {
+      "copied": "复制成功"
+    },
+    "download": "下载",
+    "cookie-tip": "关闭此消息，您将同意Zima根据其Cookies政策在此设备上使用Cookies，您可以通过浏览器设置禁用它们。",
+    "accept":"接受",
+    "reject":"拒绝"
+  },
+  "client":{
+    "title":"下载并安装zima客户端",
+    "desc":"下载并安装Zima客户端。 在启动客户端后, 点击<b>\"扫描并连接到Zima\"</b>。 系统会自动扫描并开始初始化新设备",
+    "tip-start": "如果当前无法安装ZimaClient客户端，请",
+    "tip-button": "点击此处",
+    "tip-end": "执行页面扫描。",
+    "mobile-title":"移动版ZimaClient <b>即将推出</b>",
+    "provide":"提供意见",
+    "coming": "即将推出!"
+  },
+  "device":{
+    "title":"扫描并连接到设备",
+    "desc":"如果您正在使用移动设备进行初始化或无法下载和安装ZimaClient客户端，请通过点击下方按钮继续初始化过程。",
+    "search":"搜索本地网络中...",
+    "oops":"糟糕!",
+    "no-device":"未发现设备...",
+    "no-device-tip":"请确保您的Zima设备和当前设备在 <b>在同一网络中</b> 。",
+    "to-copy":"复制IP地址"
+  },
+  "explore":{
+    "title": "探索 Zima",
+    "desc":"访问 <a {url}>ZimaSpace</a> 探索下一代数字资产管理。"
+  },
+  "help":{
+    "title": "需要帮助?",
+    "desc":"如果需要任何关于产品的信息和支持，请访问 <a {urlP}>产品支持</a> 或 <a {urlC}>联系我们</a>",
+    "support": "24/7 全天候支持 <a {url}>IceWhale.community</a>"
+  },
+  "menu":{
+    "Zima": "Zima",
+    "Products": "产品",
+    "Resource": "资源",
+    "Support": "支持",
+    "Explore": "探索",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "配件",
+    "CasaOS": "CasaOS",
+    "Docs": "文档",
+    "Blog": "博客",
+    "Media-Servers": "媒体服务",
+    "Personal-NAS": "个人NAS",
+    "Ad-Blocker": "广告拦截",
+    "Discord": "Discord",
+    "Community": "社区",
+    "Contact": "Contact",
+    "Refund-Policy": "退款政策",
+    "Privacy-Policy": "隐私政策",
+    "Terms-of-Service": "服务条款",
+    "Shipping-Policy": "运费政策",
+    "Made-with-IceWhale": "Made with IceWhale",
+    "About-Us": "关于我们",
+    "Distributors": "分销商",
+    "Affiliate": "联盟"
+  }
 }

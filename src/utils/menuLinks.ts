@@ -25,15 +25,15 @@ export default [
         href: "https://www.zimaspace.com/blog/",
       },
       {
-        title: "Media Servers",
+        title: "Media-Servers",
         href: "https://www.zimaspace.com/blog/category/media-servers",
       },
       {
-        title: "Personal NAS",
+        title: "Personal-NAS",
         href: "https://www.zimaspace.com/blog/category/personal-nas",
       },
       {
-        title: "Ad Blocker",
+        title: "Ad-Blocker",
         href: "https://www.zimaspace.com/blog/category/ad-blocker",
       },
     ],
@@ -51,17 +51,17 @@ export default [
       },
       { title: "Contact", href: space + "/support/contact" },
       {
-        title: "Refund Policy",
+        title: "Refund-Policy",
         href: space + "/support/refund-policy",
       },
       {
-        title: "Privacy Policy",
+        title: "Privacy-Policy",
         href: space + "/support/privacy-policy",
       },
-      { title: "Terms of Service", 
+      { title: "Terms-of-Service", 
         href: space + "/support/terms-of-service" },
       {
-        title: "Shipping Policy",
+        title: "Shipping-Policy",
         href: space + "/support/shipping-policy",
       },
     ],
@@ -70,14 +70,14 @@ export default [
     title: "Explore",
     links: [
       {
-        title: "Made with IceWhale",
+        title: "Made-with-IceWhale",
         href: "https://discord.gg/f9nzbmpMtU",
       },
       {
         title: "Community",
         href: "https://icewhale.community",
       },
-      { title: "About Us", href: space + "/about" },
+      { title: "About-Us", href: space + "/about" },
       { title: "Blog", href: "https://www.zimaspace.com/blog/" },
       { title: "Distributors", href: space + "/distributors" },
       { title: "Affiliate", href: space + "/affiliate" },
