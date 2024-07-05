@@ -60,15 +60,18 @@ const props = defineProps({
 })
 
 const { t } = useI18n() 
+
+// 获取版本号
+// https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/RELEASES.json
 const cards = [
   {
     title: 'macOS',
-    version: 'V 0.1.7 2024.4.1',
+    version: 'V 0.1.10 2024.6.3',
     icon: 'mac',
   },
   {
     title: 'Windows',
-    version: 'V 0.1.7 2024.4.1',
+    version: 'V 0.1.10 2024.6.3',
     icon: 'win',
   },
   {
@@ -100,11 +103,11 @@ const getOS = () => {
 
 
 const mac_intel_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/latest/Zima-latest-x64.dmg";
+  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/x64/Zima-latest-x64.dmg";
 const mac_arm_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/latest/Zima-latest-arm64.dmg";
+  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/Zima-latest-arm64.dmg";
 const win_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/latest/squirrel.windows/x64/Zima-latest%20Setup.exe";
+  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/win32/x64/Zima-latest%20Setup.exe";
 
 const handleDownload = (type) => {
   if (type) {

@@ -48,7 +48,7 @@ const initUrl = computed(() => {
 });
 
 const getAssetsFile = (name) => {
-  const deviceArray = ["ZimaBoard", "ZimaCube", "ZimaBlade"];
+  const deviceArray = ["ZimaBoard", "ZimaBlade" , "ZimaCube","ZimaCube Pro"];
   const url = deviceArray.indexOf(name) > -1 ? name : "ZimaCube";
   return new URL(`../assets/images/${url}.svg`, import.meta.url).href;
 };

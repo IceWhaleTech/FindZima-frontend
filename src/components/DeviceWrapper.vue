@@ -66,6 +66,10 @@ const fetchZimaFormServer = () => {
       case "peer-joined":
         pushToArr(devices, message.peer.device.info);
         break;
+      // case "peer-left":
+      //   devices.length = 0
+      //   console.log("peer-left",devices);
+      //   break;
       default:
         break;
     }
@@ -73,6 +77,10 @@ const fetchZimaFormServer = () => {
       socket.value.send(JSON.stringify({ type: "pong" }));
     }
     loading.value = false;
+  };
+  socket.value.onclose = () => {
+    devices.length = 0; // 清空设备列表
+    console.log("WebSocket Client Disconnected");
   };
 };
 

@@ -22,10 +22,10 @@ const langList = [
     text:'English',
     code:'en_US',
   },
-  {
-    text:'Japanese',
-    code:'ja_JP',
-  },
+  // {
+  //   text:'Japanese',
+  //   code:'ja_JP',
+  // },
   {
     text:'Chinese',
     code:'zh_CN',
