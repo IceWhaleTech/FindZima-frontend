@@ -78,10 +78,10 @@ const fetchZimaFormServer = () => {
     }
     loading.value = false;
   };
-  socket.value.onclose = () => {
-    devices.length = 0; // 清空设备列表
-    console.log("WebSocket Client Disconnected");
-  };
+  // socket.value.onclose = () => {
+  //   devices.length = 0; // 清空设备列表
+  //   console.log("WebSocket Client Disconnected");
+  // };
 };
 
 
