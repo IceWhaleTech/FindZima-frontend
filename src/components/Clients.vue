@@ -47,7 +47,7 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 import Mac from "../assets/images/mac.svg";
 import Win from "../assets/images/win.svg";
 import { event } from "vue-gtag";
@@ -63,22 +63,24 @@ const { t } = useI18n()
 
 // 获取版本号
 // https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/RELEASES.json
-const cards = [
-  {
-    title: 'macOS',
-    version: 'V 0.1.10 2024.6.3',
-    icon: 'mac',
-  },
-  {
-    title: 'Windows',
-    version: 'V 0.1.10 2024.6.3',
-    icon: 'win',
-  },
-  {
-    title: 'Mobile',
-    version: t('client.coming'),
-  }
-]
+const cards = computed(()=>(
+  [
+    {
+      title: 'macOS',
+      version: 'V 0.1.10 2024.6.3',
+      icon: 'mac',
+    },
+    {
+      title: 'Windows',
+      version: 'V 0.1.10 2024.6.3',
+      icon: 'win',
+    },
+    {
+      title: 'Mobile',
+      version: t('client.coming'),
+    }
+  ]
+)) 
 
 const currentOS = ref('');
 onMounted(() => {

@@ -1,0 +1,69 @@
+{
+  "common": {
+    "title": "Zimaデバイスの使用を開始",
+    "copyrights": "© 2020-2024 IceWhale Technology Limited. All Rights Reserved.",
+    "toast": {
+      "copied": "コピーしました"
+    },
+    "download": "ダウンロード",
+    "cookie-tip": "お客様のユーザ体験を向上し、通信データを解析するためにCookieを使用します。継続してサイトをブラウズすることで、お客様は弊社のCookieの使用に同意するものとします。ブラウザの設定からCookie使用を無効にすることができます。",
+    "accept":"同意する",
+    "reject":"拒否する"
+  },
+  "client":{
+    "title":"ZimaClientのダウンロードとインストール",
+    "desc":"ZimaClientをダウンロードして、インストールしてください。アップリを起動した後、<b>「Zimaをスキャンして接続」</b>をクリックします。システムが自動的に新しいデバイスをスキャンして、初期化プロセスを開始します。",
+    "tip-start": "ZimaClientをインストールできない場合は、",
+    "tip-button": "こちらをクリック",
+    "tip-end": "してウェブスキャンを実行してください。",
+    "mobile-title":"ZimaClient for Mobile <b/>は近日公開予定",
+    "provide":"ご意見・ご要望",
+    "coming": "近日公開予定！"
+  },
+  "device":{
+    "title":"デバイスをスキャンして接続",
+    "desc":"モバイルデバイスを使って初期化する場合、またはZimaClientをダウンロードとインストールできない場合は、以下のボタンをクリックして初期化プロセスを進めてください。",
+    "search":"ローカルネットワークで検索中...",
+    "oops":"おっと！",
+    "no-device":"デバイスが見つかりません...",
+    "no-device-tip":"Zimaデバイスとこのデバイスが<b>同じネットワーク上</b>にあることを確認してください。",
+    "to-copy":"IPアドレスをコピー"
+  },
+  "explore":{
+    "title": "Zimaをもっと知りたい",
+    "desc":"<a {url}>ZimaSpace</a>を訪れて、次世代のデジタル資産管理を探索してみてください。"
+  },
+  "help":{
+    "title": "ヘルプが必要ですか？",
+    "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品サポート</a>または<a {urlC}>お問い合わせ</a>をご覧ください。",
+    "support": "年中無休 (24×7) 技術サポート <a {url}>IceWhale.community</a>"
+  },
+  "menu":{
+    "Zima": "Zima",
+    "Products": "製品",
+    "Resource": "リソース",
+    "Support": "サポート",
+    "Explore": "アクセス",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "アクセサリー",
+    "CasaOS": "CasaOS",
+    "Docs": "ドキュメント",
+    "Blog": "ブログ",
+    "Media-Servers": "メディアサーバー",
+    "Personal-NAS": "個人用NAS",
+    "Ad-Blocker": "広告ブロッカー",
+    "Discord": "Discord",
+    "Community": "コミュニティー",
+    "Contact": "お問い合わせ",
+    "Refund-Policy": "返金ポリシー",
+    "Privacy-Policy": "プライバシーポリシー",
+    "Terms-of-Service": "利用規約",
+    "Shipping-Policy": "配送ポリシー",
+    "Made-with-IceWhale": "IceWhale製",
+    "About-Us": "弊社について",
+    "Distributors": "販売代理店",
+    "Affiliate": "アフィリエート"
+  }
+}
