@@ -70,6 +70,10 @@ export default [
     title: "Explore",
     links: [
       {
+        title: "Gallery",
+        href: "https://www.zimaspace.com/explore/gallery" ,
+      },
+      {
         title: "Made-with-IceWhale",
         href: "https://discord.gg/f9nzbmpMtU",
       },

@@ -20,24 +20,28 @@ interface Item {
 const langList = [
   {
     text:'English',
-    code:'en_US',
+    code:'en-US',
   },
   {
     text:'Japanese',
-    code:'ja_JP',
+    code:'ja-JP',
   },
   {
     text:'Chinese',
-    code:'zh_CN',
+    code:'zh-CN',
   },
 ]
 // 设置默认语言
-const currentLang = ref('en_US')
+
+const currentLang = ref('en-US')
+// 读取浏览器当前语言
+currentLang.value = window.navigator.language
+// 读取本地存储的语言
 const lang = localStorage.getItem('lang')
 if(lang){
   currentLang.value = lang 
-  locale.value = lang
 }
+locale.value = currentLang.value
 
 // 切换语言
 const handleChange = (item:Item) => {

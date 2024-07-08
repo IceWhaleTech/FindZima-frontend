@@ -36,13 +36,13 @@ onMounted(() => {
     </p>
     <div class="flex flex-row gap-4">
       <button
-        class="bg-primary px-4 py-2 text-[#FFF] rounded-[8px] hover:brightness-105 active:brightness-90"
+        class="bg-primary whitespace-nowrap px-4 py-2 text-[#FFF] rounded-[8px] hover:brightness-105 active:brightness-90"
         @click="acceptCookies"
       >
         {{$t('common.accept')}}
       </button>
       <button
-        class="bg-[#404040] px-4 py-2 text-white rounded-[8px] hover:brightness-105 active:brightness-90"
+        class="bg-[#404040] whitespace-nowrap px-4 py-2 text-white rounded-[8px] hover:brightness-105 active:brightness-90"
         @click="rejectCookies"
       >
       {{$t('common.reject')}}
