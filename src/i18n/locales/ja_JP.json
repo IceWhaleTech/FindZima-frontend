@@ -30,7 +30,7 @@
     "to-copy":"IPアドレスをコピー"
   },
   "explore":{
-    "title": "Zimaをもっと知りたい",
+    "title": "Zimaを詳しく知りたい",
     "desc":"<a {url}>ZimaSpace</a>を訪れて、次世代のデジタル資産管理を探索してみてください。"
   },
   "help":{
@@ -43,7 +43,7 @@
     "Products": "製品",
     "Resource": "リソース",
     "Support": "サポート",
-    "Explore": "アクセス",
+    "Explore": "探索",
     "ZimaCube": "ZimaCube",
     "ZimaBoard": "ZimaBoard",
     "ZimaBlade": "ZimaBlade",
@@ -55,16 +55,15 @@
     "Personal-NAS": "個人用NAS",
     "Ad-Blocker": "広告ブロッカー",
     "Discord": "Discord",
-    "Community": "コミュニティー",
+    "Community": "コミュニティ",
     "Contact": "お問い合わせ",
     "Refund-Policy": "返金ポリシー",
     "Privacy-Policy": "プライバシーポリシー",
     "Terms-of-Service": "利用規約",
     "Shipping-Policy": "配送ポリシー",
     "Made-with-IceWhale": "IceWhale製",
-    "Gallery": "ギャラリー",
-    "About-Us": "弊社について",
+    "About-Us": "私たちについて",
     "Distributors": "販売代理店",
-    "Affiliate": "アフィリエート"
+    "Affiliate": "アフィリエイト"
   }
 }
