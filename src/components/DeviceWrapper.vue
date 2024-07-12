@@ -16,9 +16,11 @@
             :mousewheel="true"
             style="padding: 0 80px;"
           >
-            <swiper-slide v-for="(device, index) in devices" :key="index" class="pb-2" >
-              <Device :device="device" class="transition hover:shadow-md"></Device>
-            </swiper-slide>
+            <template v-for="(device, index) in devices">
+              <swiper-slide  v-if="device.lan_ipv4" :key="index" class="pb-2" >
+                <Device :device="device" class="transition hover:shadow-md"></Device>
+              </swiper-slide>
+            </template>
           </swiper>
     </div>
 </template>
