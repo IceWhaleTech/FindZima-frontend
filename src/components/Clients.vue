@@ -1,18 +1,22 @@
 <template>
   <div v-if="mode == 'row'" class="flex flex-row gap-[4px]">
     <div v-for="item in cards" class="flex-1 bg-neutral-50 border rounded-[8px] pt-4 pr-3 pb-3 pl-4 transition hover:shadow-md"
-      :class="{ 'cursor-pointer': item.icon }" @click="handleDownload(item.icon)">
+      :class="[
+        item.icon?'cursor-pointer hover:shadow-md': 'cursor-default',
+        currentOS == item.icon ? 'bg-primary text-white' : 'bg-[#EEE]'
+      ]" @click="handleDownload(item.icon)">
       <h5 class="text-[20px] leading-[24px]">{{ item.title }}</h5>
-      <p class="text-[13px] leading-[16px] whitespace-nowrap opacity-35">{{ item.version }}</p>
+      <p class="text-[13px] leading-[16px] whitespace-nowrap opacity-0">{{ item.version }}</p>
       <div class="mt-[57px]">
         <div class="flex justify-end" v-if="item.icon">
-          <figure class="image border p-[11px] rounded-full " :class="currentOS == item.icon ? 'bg-primary' : 'bg-[#EEE]'">
-            <Mac v-if="item.icon == 'mac'" :style="{ fill: currentOS == item.icon ? '#fff' : '#3c3c3c' }" />
-            <Win v-if="item.icon == 'win'" :style="{ fill: currentOS == item.icon ? '#fff' : '#3c3c3c' }" />
+          <figure class="flex whitespace-nowrap items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE]" >
+            <Mac v-if="item.icon == 'mac'" :style="{ fill: '#3c3c3c' }" />
+            <Win v-if="item.icon == 'win'" :style="{ fill: '#3c3c3c' }" />
+            <a class="ml-1">{{$t('common.download')}}</a>
           </figure>
         </div>
-        <div class="whitespace-nowrap" v-else>
-          <a class="text-[15px] leading-[40px]" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+        <div class="whitespace-nowrap flex justify-end" v-else>
+          <a class="text-[15px]  border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
             <span>{{ $t("client.provide") }}</span>
           </a>
         </div>
