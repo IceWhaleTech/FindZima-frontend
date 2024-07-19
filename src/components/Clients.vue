@@ -89,6 +89,14 @@ const cards = computed(()=>(
 const currentOS = ref('');
 onMounted(() => {
   currentOS.value = getOS();
+  // fetch('https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/RELEASES.json')
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     console.log(data);
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //   })
 });
 
 const getOS = () => {
