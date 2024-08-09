@@ -1,21 +1,21 @@
 {
   "common": {
-    "title": "Zimaデバイスの使用を開始",
+    "title": "Zimaデバイスの使用を開始するには",
     "copyrights": "© 2020-2024 IceWhale Technology Limited. All Rights Reserved.",
     "toast": {
       "copied": "コピーしました"
     },
-    "download": "取得する",
-    "cookie-tip": "お客様のユーザ体験を向上し、通信データを解析するためにCookieを使用します。継続してサイトをブラウズすることで、お客様は弊社のCookieの使用に同意するものとします。ブラウザの設定からCookie使用を無効にすることができます。",
+    "download": "ダウンロード",
+    "cookie-tip": "お客様のユーザー体験を向上し、通信データを解析するためにCookieを使用します。サイトのブラウジングを続けることにより、お客様は私たちのCookie使用ポリシーに同意するものとします。ブラウザの設定を通じて、Cookieの使用を無効にすることができます。",
     "accept":"同意する",
     "reject":"拒否する"
   },
   "client":{
     "title":"ZimaClientのダウンロードとインストール",
-    "desc":"ZimaClientをダウンロードして、インストールしてください。アップリを起動した後、<b>「Zimaをスキャンして接続」</b>をクリックします。システムが自動的に新しいデバイスをスキャンして、初期化プロセスを開始します。",
+    "desc":"まず、ZimaClientをダウンロードし、インストールしてください。インストール後、ZimaClientを起動し、<b>「Zimaをスキャンして接続」</b>をクリックしてください。システムは自動的に新しいデバイスをスキャンし、初期化プロセスを開始します。",
     "tip-start": "ZimaClientをインストールできない場合は、",
-    "tip-button": "こちらをクリック",
-    "tip-end": "してウェブスキャンを実行してください。",
+    "tip-button": "こちらのリンク",
+    "tip-end": "をクリックしてウェブスキャンを実行してください。",
     "mobile-title":"ZimaClient for Mobile <b/>は近日公開予定",
     "provide":"ご意見・ご要望",
     "coming": "近日公開予定！"
@@ -35,8 +35,8 @@
   },
   "help":{
     "title": "ヘルプが必要ですか？",
-    "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品サポート</a>または<a {urlC}>お問い合わせ</a>をご覧ください。",
-    "support": "年中無休 (24×7) 技術サポート <a {url}>IceWhale.community</a>"
+    "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品サポート</a>または<a {urlC}>お問い合わせ</a>ページをご覧ください。",
+    "support": "私たちは年中無休で（24時間×7日）、技術サポートを提供しています<br/> <a {url}>IceWhale.community</a>"
   },
   "menu":{
     "Zima": "Zima",

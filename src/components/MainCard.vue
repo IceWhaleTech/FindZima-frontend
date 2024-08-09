@@ -7,7 +7,7 @@
         <Icon2 class="h-[120px]" v-if="index == 2" />
       </figure>
     </div>
-    <div class="flex justify-start pt-[36px] pb-[30px]  md:pt-[56px] md:justify-end ">
+    <div class="flex justify-start pt-[36px] pb-[30px]  lg:pt-[56px] lg:justify-end ">
       <p class="description  leading-[19px] text-fontLow  md:w-[317px] md:h-[130px]" v-html="description"></p>
     </div>
     <slot></slot>

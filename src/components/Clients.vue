@@ -12,11 +12,13 @@
           <figure class="flex whitespace-nowrap items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE]" >
             <Mac v-if="item.icon == 'mac'" :style="{ fill: '#3c3c3c' }" />
             <Win v-if="item.icon == 'win'" :style="{ fill: '#3c3c3c' }" />
-            <a class="ml-1">{{$t('common.download')}}</a>
+            <a :class="locale=='ja-JP'?'text-[13px]':'text-[15px]'">{{$t('common.download')}}</a>
           </figure>
         </div>
         <div class="whitespace-nowrap flex justify-end" v-else>
-          <a class="text-[15px]  border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+          <a class="border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" 
+          :class="locale=='ja-JP'?'text-[13px]':'text-[15px]'"
+          href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
             <span>{{ $t("client.provide") }}</span>
           </a>
         </div>
@@ -63,7 +65,7 @@ const props = defineProps({
   }
 })
 
-const { t } = useI18n() 
+const { t , locale} = useI18n() 
 
 // 获取版本号
 // https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/RELEASES.json

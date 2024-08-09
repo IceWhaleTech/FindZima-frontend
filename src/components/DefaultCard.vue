@@ -1,7 +1,8 @@
 <template>
   <div class="flex justify-between bg-white border gap-6 md:gap-24 rounded-[14px] px-20 pt-[64px] pb-[56px]">
     <div class="flex-1 flex flex-col gap-12">
-      <h3 class="text-[30px] leading-[32px] md:text-[34px]">{{ $t("common.title") }}</h3>
+      <h3 class="text-[30px] leading-[32px]"
+      :class="locale=='ja-JP'?'md:text-[30px]':'md:text-[34px]'">{{ $t("common.title") }}</h3>
       <h4 class="text-[24px] leading-[28px]">{{ t('client.title') }}</h4>
       <div>
         <p class="description  leading-[19px] text-fontLow  max-w-[400px] " v-html="$t('client.desc')"></p>
@@ -20,7 +21,7 @@
 import { useI18n } from 'vue-i18n'
 import Clients from './Clients.vue'
 
-const { t } = useI18n()
+const { t , locale} = useI18n()
 const props = defineProps({
   scanShow: Boolean,
 })
