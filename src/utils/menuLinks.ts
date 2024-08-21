@@ -10,7 +10,7 @@ export default [
         title: "Accessories",
         href: "https://shop.zimaboard.com/collections/zima-accessories?utm_source=head&utm_medium=menu",
       },
-      { title: "CasaOS", href: "https://www.casaos.io" },
+      { title: "CasaOS", href: "https://casaos.zimaspace.com/" },
     ],
   },
   {
