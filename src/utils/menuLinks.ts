@@ -18,7 +18,7 @@ export default [
     links: [
       {
         title: "Docs",
-        href: "https://docs.zimaboard.com/",
+        href: "https://docs.zimaspace.com/",
       },
       {
         title: "Blog",
