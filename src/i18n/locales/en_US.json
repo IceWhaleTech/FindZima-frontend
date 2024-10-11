@@ -35,8 +35,8 @@
   },
   "help":{
     "title": "Need any help?",
-    "desc":"If you need any detail or support about your products, please visit <a {urlP}>Product support</a> or <a {urlC}>Contact us</a>",
-    "support": "24/7 All-day tech support <a {url}>IceWhale.community</a>"
+    "desc":"If you need any detail or support about your products, please visit <a {urlP}>Our Docs</a> or <a {urlC}>Contact us</a>",
+    "support": "24/7 All-day tech support <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel </a>"
   },
   "menu":{
     "Zima": "Zima",

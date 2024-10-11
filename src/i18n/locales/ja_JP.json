@@ -35,8 +35,8 @@
   },
   "help":{
     "title": "ヘルプが必要ですか？",
-    "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品サポート</a>または<a {urlC}>お問い合わせ</a>ページをご覧ください。",
-    "support": "私たちは年中無休で（24時間×7日）、技術サポートを提供しています<br/> <a {url}>IceWhale.community</a>"
+    "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品ドキュメント</a>または<a {urlC}>お問い合わせ</a>ページをご覧ください。",
+    "support": "私たちは年中無休で（24時間×7日）、技術サポートを提供しています<br/> <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel </a>"
   },
   "menu":{
     "Zima": "Zima",
