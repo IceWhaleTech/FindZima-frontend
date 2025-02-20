@@ -33,8 +33,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const websocketProtocol = "wss";
-// const host = 'find.zimaspace.com'
-const host = 'www.findzima.com'
+const host = 'find.zimaspace.com'
+// const host = 'www.findzima.com'
 const webSocketServer = `${websocketProtocol}://${host}/ws`;
 
 const modules = ref([Keyboard,Mousewheel]);
