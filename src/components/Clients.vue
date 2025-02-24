@@ -119,11 +119,11 @@ const getOS = () => {
 
 
 const mac_intel_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/x64/Zima-latest-x64.dmg";
+  "https://zima-client.r2.icewhale.io/v2/mac/x64/Zima-2.0.0-mac-x64.dmg";
 const mac_arm_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/Zima-latest-arm64.dmg";
+  "https://zima-client.r2.icewhale.io/v2/mac/arm64/Zima-2.0.0-mac-arm64.dmg";
 const win_link =
-  "https://zimaos.oss-accelerate.aliyuncs.com/client/releases/win32/x64/Zima-latest%20Setup.exe";
+  "https://zima-client.r2.icewhale.io/v2/win/x64/Zima-2.0.0-win-x64.exe";
 
 const handleDownload = (type) => {
   if (type) {
