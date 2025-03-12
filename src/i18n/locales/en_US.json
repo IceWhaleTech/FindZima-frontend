@@ -18,7 +18,8 @@
     "tip-end": "to perform a web scan.",
     "mobile-title":"ZimaClient for Mobile <b/>will coming soon",
     "provide":"Provide ideas",
-    "coming": "Coming soon!"
+    "coming": "Coming soon!",
+    "chip":"Chip"
   },
   "device":{
     "title":"Scan and connect to Devices",

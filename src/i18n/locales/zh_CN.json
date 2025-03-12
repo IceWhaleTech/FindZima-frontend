@@ -18,7 +18,8 @@
     "tip-end": "执行页面扫描。",
     "mobile-title":"移动版ZimaClient <b>即将推出</b>",
     "provide":"提供意见",
-    "coming": "即将推出!"
+    "coming": "即将推出!",
+    "chip":"芯片"
   },
   "device":{
     "title":"扫描并连接到设备",

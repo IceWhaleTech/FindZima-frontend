@@ -9,10 +9,16 @@
       <p class="text-[13px] leading-[16px] whitespace-nowrap opacity-0">{{ item.version }}</p>
       <div class="mt-[57px]">
         <div class="flex justify-end" v-if="item.icon">
-          <figure class="flex whitespace-nowrap items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE]" >
+          <figure class="select-btn flex whitespace-nowrap items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE] relative" >
             <Mac v-if="item.icon == 'mac'" :style="{ fill: '#3c3c3c' }" />
             <Win v-if="item.icon == 'win'" :style="{ fill: '#3c3c3c' }" />
             <a :class="locale=='ja-JP'?'text-[13px]':'text-[15px]'">{{$t('common.download')}}</a>
+            <div v-if="item.icon === 'mac' && !isChipAvalable" class="selector w-full absolute top-11 left-0 transition-all">
+              <ul  class=" bg-white border rounded-lg text-[#333] py-1 px-[2px]">
+                <li class="cursor-pointer hover:bg-[#EEEEEE] pl-4 mb-[2px] rounded hover:text-primary whitespace-nowrap" @click="downloadLink(mac_arm_link);">Intel {{ $t('client.chip') }}</li>
+                <li class="cursor-pointer hover:bg-[#EEEEEE] pl-4 rounded hover:text-primary whitespace-nowrap" @click="downloadLink(mac_intel_link);">Apple {{ $t('client.chip') }}</li>
+              </ul>
+            </div>
           </figure>
         </div>
         <div class="whitespace-nowrap flex justify-end" v-else>
@@ -37,10 +43,16 @@
       </div>
       <div>
         <div class="flex justify-end text-black" v-if="item.icon">
-          <figure class="flex items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE]" >
+          <figure class="select-btn flex items-center image border p-[8px] rounded-[12px] bg-[#EEEEEE] relative" >
             <Mac v-if="item.icon == 'mac'" :style="{ fill: '#3c3c3c' }" />
             <Win v-if="item.icon == 'win'" :style="{ fill: '#3c3c3c' }" />
             <a class="ml-1">{{$t('common.download')}}</a>
+            <div v-if="item.icon === 'mac' && !isChipAvalable" class="selector w-full absolute top-11 left-0 transition-all">
+              <ul  class=" bg-white border rounded-lg text-[#333] py-1 px-[2px]">
+                <li class="cursor-pointer hover:bg-[#EEEEEE] pl-4 mb-[2px] rounded hover:text-primary whitespace-nowrap" @click.stop="downloadLink(mac_arm_link);">Intel {{ $t('client.chip') }}</li>
+                <li class="cursor-pointer hover:bg-[#EEEEEE] pl-4 rounded hover:text-primary whitespace-nowrap" @click.stop="downloadLink(mac_intel_link);">Apple {{ $t('client.chip') }}</li>
+              </ul>
+            </div>
           </figure>
         </div>
         <div class="whitespace-nowrap flex justify-end" v-else>
@@ -89,8 +101,10 @@ const cards = computed(()=>(
 )) 
 
 const currentOS = ref('');
+const isChipAvalable = ref(false)
 onMounted(() => {
-  currentOS.value = getOS();
+  currentOS.value = getOS();4
+  isChipAvalable.value = checkChip()
   // fetch('https://zimaos.oss-accelerate.aliyuncs.com/client/releases/darwin/arm64/RELEASES.json')
   //   .then(res => res.json())
   //   .then(data => {
@@ -100,6 +114,11 @@ onMounted(() => {
   //     console.log(err);
   //   })
 });
+
+const checkChip = () => {
+  const w = document.createElement("canvas").getContext("webgl");
+  return w ? true : false;
+}
 
 const getOS = () => {
   //   const userAgent = window.navigator.userAgent;
@@ -131,6 +150,10 @@ const handleDownload = (type) => {
   }
 }
 
+const downloadLink = (link)=>{
+ window.open(link)
+}
+
 const downloadMac = () => {
   event("download", {
     event_category: "download",
@@ -156,3 +179,12 @@ const downloadWin = () => {
 };
 
 </script>
+<style scoped>
+.select-btn .selector {
+  max-height: 0;
+  overflow: hidden;
+}
+.select-btn:hover .selector {
+  max-height: 80px;
+}
+</style>
