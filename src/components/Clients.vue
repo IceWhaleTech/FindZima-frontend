@@ -137,12 +137,12 @@ const getOS = () => {
 
 
 
-const mac_intel_link =
-  "https://zima-client.r2.icewhale.io/v2/mac/x64/Zima-2.0.0-mac-x64.dmg";
-const mac_arm_link =
-  "https://zima-client.r2.icewhale.io/v2/mac/arm64/Zima-2.0.0-mac-arm64.dmg";
-const win_link =
-  "https://zima-client.r2.icewhale.io/v2/win/x64/Zima-2.0.0-win-x64.exe";
+const mac_intel_link
+  = 'https://zima-client.r2.icewhale.io/get/v2/mac/x64/latest'
+const mac_arm_link
+  = 'https://zima-client.r2.icewhale.io/get/v2/mac/arm64/latest'
+const win_link
+  = 'https://zima-client.r2.icewhale.io/get/v2/win/x64/latest'
 
 const handleDownload = (type) => {
   if (type) {
