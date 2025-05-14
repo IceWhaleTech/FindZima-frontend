@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "Zima 장치 사용 시작하기",
+    "copyrights": "© 2020-2025 IceWhale Technology Limited. All rights reserved.",
+    "toast": {
+      "copied": "복사됨"
+    },
+    "download": "다운로드",
+    "cookie-tip": "이 메시지를 닫으면, 브라우저 설정에서 쿠키를 비활성화하지 않은 경우 Zima의 쿠키 사용에 동의하는 것입니다.",
+    "accept": "동의",
+    "reject": "거부"
+  },
+  "client": {
+    "title": "ZimaClient 다운로드 및 설치",
+    "desc": "ZimaClient 클라이언트를 다운로드하여 설치합니다. 클라이언트를 실행한 후 <b>\"Zima 스캔 후 연결\"</b>을 클릭하십시오. 시스템이 자동으로 새 장치를 스캔하고 초기화 프로세스를 시작합니다.",
+    "tip-start": "ZimaClient를 임시로 설치할 수 없는 경우, ",
+    "tip-button": "여기를 클릭",
+    "tip-end": "하여 웹 스캔을 수행하십시오.",
+    "mobile-title": "ZimaClient for Mobile <b/> 곧 출시 예정",
+    "provide": "아이디어 제공",
+    "coming": "곧 출시!",
+    "chip": "칩"
+  },
+  "device": {
+    "title": "장치 스캔 및 연결",
+    "desc": "모바일 장치에서 초기화를 진행하거나 ZimaClient를 다운로드하여 설치할 수 없는 경우, 아래 버튼을 클릭하여 초기화 프로세스를 진행하십시오.",
+    "search": "로컬 네트워크에서 검색 중...",
+    "oops": "오류!",
+    "no-device": "장치 없음...",
+    "no-device-tip": "Zima 장치와 장비가 <b>같은 네트워크에 있는지</b> 확인하십시오.",
+    "to-copy": "IP 주소 복사"
+  },
+  "explore": {
+    "title": "Zima 탐색",
+    "desc": "<a {url}>ZimaSpace</a>에서 차세대 디지털 자산 관리 시스템을 탐색하십시오."
+  },
+  "help": {
+    "title": "도움이 필요하신가요?",
+    "desc": "제품에 대한 자세한 정보나 지원이 필요하시면, <a {urlP}>문서</a>를 방문하거나 <a {urlC}>연락하기</a>를 클릭하십시오.",
+    "support": "24/7 기술 지원 <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale 채널</a>"
+  },
+  "menu": {
+    "Zima": "Zima",
+    "Products": "제품",
+    "Resource": "리소스",
+    "Support": "지원",
+    "Explore": "탐색",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "액세서리",
+    "CasaOS": "CasaOS",
+    "Docs": "문서",
+    "Blog": "블로그",
+    "Media-Servers": "미디어 서버",
+    "Personal-NAS": "개인 NAS",
+    "Ad-Blocker": "광고 차단기",
+    "Discord": "Discord",
+    "Community": "커뮤니티",
+    "Contact": "연락처",
+    "Refund-Policy": "환불 정책",
+    "Privacy-Policy": "개인정보 처리방침",
+    "Terms-of-Service": "서비스 약관",
+    "Shipping-Policy": "배송 정책",
+    "Made-with-IceWhale": "IceWhale로 제작됨",
+    "Gallery": "갤러리",
+    "About-Us": "회사 소개",
+    "Distributors": "유통업체",
+    "Affiliate": "제휴"
+  }
+}

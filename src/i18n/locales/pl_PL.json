@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "Rozpocznij korzystanie z urządzeń Zima",
+    "copyrights": "© 2020-2025 IceWhale Technology Limited. Wszelkie prawa zastrzeżone.",
+    "toast": {
+      "copied": "Skopiowano"
+    },
+    "download": "Pobierz",
+    "cookie-tip": "Zamykając tę wiadomość, wyrażasz zgodę na używanie plików cookie przez Zima na tym urządzeniu zgodnie z polityką plików cookie, chyba że wyłączyłeś je w ustawieniach przeglądarki.",
+    "accept": "Akceptuj",
+    "reject": "Odrzuć"
+  },
+  "client": {
+    "title": "Pobierz i zainstaluj ZimaClient",
+    "desc": "Pobierz i zainstaluj klienta ZimaClient. Po uruchomieniu klienta kliknij <b>\"Skanuj i połącz z Zima\"</b>. System automatycznie zeskanuje i rozpocznie proces inicjalizacji nowego urządzenia.",
+    "tip-start": "Jeśli tymczasowo nie możesz zainstalować ZimaClient, proszę",
+    "tip-button": "kliknij tutaj",
+    "tip-end": "aby wykonać skanowanie w sieci.",
+    "mobile-title": "ZimaClient dla urządzeń mobilnych <b/>wkrótce dostępny",
+    "provide": "Dostarcz pomysły",
+    "coming": "Wkrótce!",
+    "chip": "Układ"
+  },
+  "device": {
+    "title": "Skanuj i połącz z urządzeniami",
+    "desc": "Jeśli inicjalizujesz urządzenie z urządzenia mobilnego lub nie możesz pobrać i zainstalować klienta ZimaClient, proszę kontynuować proces inicjalizacji klikając poniższy przycisk.",
+    "search": "Szukam w sieci lokalnej...",
+    "oops": "Ups!",
+    "no-device": "Brak urządzeń...",
+    "no-device-tip": "Proszę upewnić się, że urządzenie Zima i Twoje urządzenie są <b>w tej samej sieci</b>.",
+    "to-copy": "Skopiuj adres IP"
+  },
+  "explore": {
+    "title": "Poznaj Zima",
+    "desc": "Odwiedź <a {url}>ZimaSpace</a>, aby odkryć przyszłość zarządzania aktywami cyfrowymi."
+  },
+  "help": {
+    "title": "Potrzebujesz pomocy?",
+    "desc": "Jeśli potrzebujesz szczegółowych informacji lub wsparcia dotyczącego swoich produktów, proszę odwiedzić <a {urlP}>Nasze dokumenty</a> lub <a {urlC}>Skontaktuj się z nami</a>",
+    "support": "Wsparcie techniczne 24/7 przez całą dobę <a {url}>IceWhale.community</a> <br/><a {urlD}>Kanał IceWhale</a>"
+  },
+  "menu": {
+    "Zima": "Zima",
+    "Products": "Produkty",
+    "Resource": "Zasoby",
+    "Support": "Wsparcie",
+    "Explore": "Poznaj",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "Akcesoria",
+    "CasaOS": "CasaOS",
+    "Docs": "Dokumenty",
+    "Blog": "Blog",
+    "Media-Servers": "Serwery multimedialne",
+    "Personal-NAS": "Personalny NAS",
+    "Ad-Blocker": "Bloker reklam",
+    "Discord": "Discord",
+    "Community": "Społeczność",
+    "Contact": "Kontakt",
+    "Refund-Policy": "Polityka zwrotów",
+    "Privacy-Policy": "Polityka prywatności",
+    "Terms-of-Service": "Warunki korzystania z usługi",
+    "Shipping-Policy": "Polityka wysyłki",
+    "Made-with-IceWhale": "Stworzone z IceWhale",
+    "Gallery": "Galeria",
+    "About-Us": "O nas",
+    "Distributors": "Dystrybutorzy",
+    "Affiliate": "Partnerzy"
+  }
+}

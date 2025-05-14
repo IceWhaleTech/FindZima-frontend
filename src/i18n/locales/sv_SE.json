@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "Börja använda dina Zima-enheter",
+    "copyrights": "© 2020-2025 IceWhale Technology Limited. Alla rättigheter förbehållna.",
+    "toast": {
+      "copied": "Kopierad"
+    },
+    "download": "Ladda ner",
+    "cookie-tip": "Genom att stänga detta meddelande godkänner du Zimas användning av cookies på denna enhet i enlighet med deras cookie-policy, om du inte har inaktiverat dem via din webbläsarinställningar.",
+    "accept": "Acceptera",
+    "reject": "Avvisa"
+  },
+  "client": {
+    "title": "Ladda ner och installera ZimaClient",
+    "desc": "Ladda ner och installera ZimaClient-klienten. När du har startat klienten, klicka på <b>\"Skanna och anslut till Zima\"</b>. Systemet kommer automatiskt att skanna och påbörja initialiseringsprocessen för den nya enheten.",
+    "tip-start": "Om du tillfälligt inte kan installera ZimaClient, vänligen",
+    "tip-button": "klicka här",
+    "tip-end": "för att utföra en webbsökning.",
+    "mobile-title": "ZimaClient för mobil <b/>kommer snart",
+    "provide": "Ge idéer",
+    "coming": "Kommer snart!",
+    "chip": "Chip"
+  },
+  "device": {
+    "title": "Skanna och anslut till enheter",
+    "desc": "Om du initierar från en mobil enhet eller inte kan ladda ner och installera ZimaClient-klienten, vänligen fortsätt med initialiseringsprocessen genom att klicka på knappen nedan.",
+    "search": "Söker på lokalt nätverk...",
+    "oops": "Oj!",
+    "no-device": "Inga enheter...",
+    "no-device-tip": "Vänligen se till att din Zima-enhet och din utrustning är <b>på samma nätverk</b>.",
+    "to-copy": "Kopiera IP-adress"
+  },
+  "explore": {
+    "title": "Utforska Zima",
+    "desc": "Besök <a {url}>ZimaSpace</a> för att utforska nästa generations digitala tillgångshantering."
+  },
+  "help": {
+    "title": "Behöver du hjälp?",
+    "desc": "Om du behöver detaljer eller support om dina produkter, vänligen besök <a {urlP}>Våra dokument</a> eller <a {urlC}>Kontakta oss</a>",
+    "support": "24/7 Allt-dagars teknisk support <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel</a>"
+  },
+  "menu": {
+    "Zima": "Zima",
+    "Products": "Produkter",
+    "Resource": "Resurser",
+    "Support": "Support",
+    "Explore": "Utforska",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "Tillbehör",
+    "CasaOS": "CasaOS",
+    "Docs": "Dokument",
+    "Blog": "Blogg",
+    "Media-Servers": "Mediaservrar",
+    "Personal-NAS": "Personlig NAS",
+    "Ad-Blocker": "Annonsblockerare",
+    "Discord": "Discord",
+    "Community": "Gemenskap",
+    "Contact": "Kontakt",
+    "Refund-Policy": "Återbetalningspolicy",
+    "Privacy-Policy": "Integritetspolicy",
+    "Terms-of-Service": "Användarvillkor",
+    "Shipping-Policy": "Fraktpolicy",
+    "Made-with-IceWhale": "Tillverkad med IceWhale",
+    "Gallery": "Galleri",
+    "About-Us": "Om oss",
+    "Distributors": "Distributörer",
+    "Affiliate": "Affiliate"
+  }
+}

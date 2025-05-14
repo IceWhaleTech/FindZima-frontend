@@ -18,22 +18,58 @@ interface Item {
   code: string;
 }
 const langList = [
-  {
+{
     text:'English',
-    code:'en-US',
+    code:'en',
   },
   {
-    text:'Japanese',
-    code:'ja-JP',
+    text:'日本語',
+    code:'jp',
   },
   {
-    text:'Chinese',
-    code:'zh-CN',
+    text:'简体中文',
+    code:'zh',
+  },
+  {
+    text:'Deutsch',
+    code:'de',
+  },
+  {
+    text:'Italiano',
+    code:'it',
+  },
+  {
+    text:'Français',
+    code:'fr',
+  },
+  {
+    text:'Español',
+    code:'es',
+  },
+  {
+    text:'Nederlands',
+    code:'nl',
+  },
+  {
+    text:'Polski',
+    code:'pl',
+  },
+  {
+    text:'Português',
+    code:'pt',
+  },
+  {
+    text:'Svenska',
+    code:'sv',
+  },
+  {
+    text:'한국어',
+    code:'ko',
   },
 ]
 // 设置默认语言
 
-const currentLang = ref('en-US')
+const currentLang = ref('en')
 // 读取浏览器当前语言
 currentLang.value = window.navigator.language
 // 读取本地存储的语言

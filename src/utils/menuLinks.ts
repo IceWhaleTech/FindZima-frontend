@@ -5,6 +5,7 @@ export default [
     links: [
       { title: "ZimaCube", href: space + "/products/cube-personal-cloud" },
       { title: "ZimaBoard", href: space + "/products/single-board-server" },
+      { title: "ZimaBoard2", href: space + "/products/single-board2-server" },
       { title: "ZimaBlade", href: space + "/products/blade-personal-nas" },
       {
         title: "Accessories",

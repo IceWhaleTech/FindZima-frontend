@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "Comienza a usar tus dispositivos Zima",
+    "copyrights": "© 2020-2025 IceWhale Technology Limited. Todos los derechos reservados.",
+    "toast": {
+      "copied": "Copiado"
+    },
+    "download": "Descargar",
+    "cookie-tip": "Al cerrar este mensaje, aceptas el uso de cookies por parte de Zima en este dispositivo de acuerdo con su política de cookies, a menos que las hayas deshabilitado a través de la configuración de tu navegador.",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  },
+  "client": {
+    "title": "Descargar e instalar ZimaClient",
+    "desc": "Descarga e instala el cliente ZimaClient. Después de abrir el cliente, haz clic en <b>\"Escanear y conectar a Zima\"</b>. El sistema escaneará automáticamente e iniciará el proceso de inicialización del nuevo dispositivo.",
+    "tip-start": "Si no puedes instalar temporalmente ZimaClient, por favor",
+    "tip-button": "haz clic aquí",
+    "tip-end": "para realizar un escaneo web.",
+    "mobile-title": "ZimaClient para Móvil <b/>próximamente",
+    "provide": "Proporcionar ideas",
+    "coming": "¡Próximamente!",
+    "chip": "Chip"
+  },
+  "device": {
+    "title": "Escanear y conectar dispositivos",
+    "desc": "Si estás inicializando desde un dispositivo móvil o no puedes descargar e instalar el cliente ZimaClient, por favor continúa con el proceso de inicialización haciendo clic en el botón de abajo.",
+    "search": "Buscando en la red local...",
+    "oops": "¡Ups!",
+    "no-device": "No se encontraron dispositivos...",
+    "no-device-tip": "Por favor asegúrate de que tu dispositivo Zima y tu equipo estén <b>en la misma red</b>.",
+    "to-copy": "Copiar dirección IP"
+  },
+  "explore": {
+    "title": "Explora Zima",
+    "desc": "Visita <a {url}>ZimaSpace</a> para explorar la próxima generación de gestión de activos digitales."
+  },
+  "help": {
+    "title": "¿Necesitas ayuda?",
+    "desc": "Si necesitas más detalles o soporte sobre tus productos, por favor visita <a {urlP}>Nuestros Docs</a> o <a {urlC}>Contáctanos</a>",
+    "support": "Soporte técnico 24/7 <a {url}>IceWhale.community</a> <br/><a {urlD}>Canal IceWhale</a>"
+  },
+  "menu": {
+    "Zima": "Zima",
+    "Products": "Productos",
+    "Resource": "Recursos",
+    "Support": "Soporte",
+    "Explore": "Explorar",
+    "ZimaCube": "ZimaCube",
+    "ZimaBoard": "ZimaBoard",
+    "ZimaBlade": "ZimaBlade",
+    "Accessories": "Accesorios",
+    "CasaOS": "CasaOS",
+    "Docs": "Docs",
+    "Blog": "Blog",
+    "Media-Servers": "Servidores Multimedia",
+    "Personal-NAS": "NAS Personal",
+    "Ad-Blocker": "Bloqueador de anuncios",
+    "Discord": "Discord",
+    "Community": "Comunidad",
+    "Contact": "Contacto",
+    "Refund-Policy": "Política de reembolsos",
+    "Privacy-Policy": "Política de privacidad",
+    "Terms-of-Service": "Términos del servicio",
+    "Shipping-Policy": "Política de envío",
+    "Made-with-IceWhale": "Hecho con IceWhale",
+    "Gallery": "Galería",
+    "About-Us": "Sobre nosotros",
+    "Distributors": "Distribuidores",
+    "Affiliate": "Afiliado"
+  }
+}
