@@ -6,10 +6,11 @@ import CloseIcon from "../assets/images/close.svg";
 import MenuIcon from "../assets/images/menu.svg";
 import ArrowLeft from "../assets/images/ArrowLeft.svg";
 import LangSelect from "./LangSelect.vue";
+import { useI18n } from 'vue-i18n'
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const md = computed(() => breakpoints.current().value.includes("md"));
 const showNavbar = ref(true);
-
+const { locale } = useI18n();
 onMounted(() => {
   const prevScrollY = ref(0);
   window.addEventListener("scroll", () => {
@@ -44,6 +45,13 @@ watch(
   },
 );
 
+function getHref(link) {
+  if (link.href.includes("https://www.zimaspace.com/docs/")||link.href.includes("https://www.zimaspace.com/blog/") || link.href.indexOf("https://www.zimaspace.com") < 0) {
+    return `${link.href}?utm_source=head&utm_medium=menu`;
+  } else if(link.href.includes("https://www.zimaspace.com/")) {
+    return `${link.href.replace('www.zimaspace.com/','www.zimaspace.com/'+locale.value+'/')}?utm_source=head&utm_medium=menu`;
+  }
+}
 // useNuxtApp().hook("page:loading:start", () => {
 //   showMenu.value = false;
 //   currentSubmenu.value = "";
@@ -140,7 +148,7 @@ watch(
           <!-- Links -->
           <ul class="flex flex-col gap-4">
             <li class="transition-transform duration-300 hover:translate-x-1" v-for="link in group.links">
-              <a style="text-decoration: none;" :href="`${link.href}?utm_source=head&utm_medium=menu`" >{{
+              <a style="text-decoration: none;" :href="getHref(link)" >{{
                 $t('menu.'+ link.title)
                 }}</a>
             </li>

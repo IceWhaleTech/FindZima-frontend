@@ -24,7 +24,7 @@
         <div
           class="flex flex-col px-[24px] bg-[#292929] justify-between border rounded-[14px] py-6 text-white mt-[4px] gap-4 lg:flex-row lg:py-5 md:px-[80px]">
           <h4 class="text-[30px] leading-[32px] whitespace-nowrap lg:text-[20px] lg:leading-[24px]">{{ $t('explore.title') }}</h4>
-          <p v-html=" $t('explore.desc',{url:`href='https://www.zimaspace.com/' target='_blank'`}) "></p>
+          <p v-html=" $t('explore.desc',{url:`href='https://www.zimaspace.com/${locale}' target='_blank'`}) "></p>
         </div>
         <div class="text-center text-[12px] mt-[24px] mb-[40px] opacity-80 ">{{ $t('common.copyrights') }}</div>
       </div>
@@ -44,7 +44,7 @@ import CookieTip from './components/CookieTip.vue'
 import { useI18n } from 'vue-i18n'
 import { computed, provide, ref, watchEffect } from 'vue'
 
-const { t } = useI18n() 
+const { t , locale } = useI18n() 
 
 const scanShow = ref(false)
 
