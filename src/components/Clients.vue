@@ -24,7 +24,7 @@
         <div class="whitespace-nowrap flex justify-end" v-else>
           <a class="border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" 
           :class="locale=='ja-JP'?'text-[13px]':'text-[15px]'"
-          href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+          href="https://discord.com/invite/f9nzbmpMtU?utm_source=head&utm_medium=menu" target="_blank">
             <span>{{ $t("client.provide") }}</span>
           </a>
         </div>
@@ -56,7 +56,7 @@
           </figure>
         </div>
         <div class="whitespace-nowrap flex justify-end" v-else>
-          <a class="text-[15px]  border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+          <a class="text-[15px]  border p-[8px] rounded-[12px] bg-[#EEEEEE] text-black hover:text-primary" href="https://discord.com/invite/f9nzbmpMtU?utm_source=head&utm_medium=menu" target="_blank">
             <span>{{ $t("client.provide") }}</span>
           </a>
         </div>

@@ -2,7 +2,8 @@
   <div class="flex-1 bg-white border rounded-[14px] p-6 md:px-20 md:py-8">
     <h5 class="text-[20px] leading-[24px]" v-html="$t('client.mobile-title')"></h5>
     <button class="border bg-neutral-50 rounded-[8px] px-4 h-10 mt-4">
-      <a class="text-[14px] leading-10" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank">
+      <!-- <a class="text-[14px] leading-10" href="https://github.com/IceWhaleTech/zimaos-rauc/issues" target="_blank"> -->
+      <a class="text-[14px] leading-10" href="https://discord.com/invite/f9nzbmpMtU?utm_source=head&utm_medium=menu" target="_blank">
         <span>{{ $t('client.provide') }}</span>
       </a>
     </button>
