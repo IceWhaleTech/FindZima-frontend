@@ -67,9 +67,9 @@ function getHref(link) {
   ]">
     <!-- Main Nav -->
     <div class="fixed z-40 w-full bg-[#111111]/75 text-white/50 backdrop-blur">
-      <div class="px-6 mx-auto flex w-full max-w-[1328px] flex-row items-start justify-between">
+      <div class="gpx  mx-auto flex max-w-screen-xl flex-row items-start justify-between">
         <!-- Left -->
-        <div class="flex flex-row px-6 md:px-20" :class="{ 'flex-col md:flex-row': showMenu }">
+        <div class="flex flex-row" :class="{ 'flex-col md:flex-row': showMenu }">
           <!-- Logo -->
           <div :class="['flex h-[4rem] items-center hover:text-white']">
             <a style="text-decoration: none;" href="https://www.zimaspace.com/">Zima</a>
@@ -136,7 +136,7 @@ function getHref(link) {
           : 'max-h-0 pt-0',
       ]">
         <div v-for="group in menuLinks" :class="[
-          'gpx mx-auto max-w-[1328px] px-12 md:px-[104px] animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade',
+          'gpx mx-auto max-w-screen-xl px-12 md:px-[104px] animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade',
           { hidden: currentSubmenu != group.title },
         ]" @pointerenter="md && (currentSubmenu = group.title)" @pointerleave="md && (currentSubmenu = '')">
           <!-- Back -->

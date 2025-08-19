@@ -8,7 +8,16 @@
     "download": "Downloaden",
     "cookie-tip": "Door deze melding te sluiten, geef je toestemming voor het gebruik van cookies door Zima op dit apparaat, in overeenstemming met het cookiebeleid, tenzij je ze hebt uitgeschakeld via de browserinstellingen.",
     "accept": "Accepteren",
-    "reject": "Afwijzen"
+    "reject": "Afwijzen",
+    "download-center": "Downloadcentrum",
+    "explore-casaos": "CasaOS verkennen",
+    "github": "GitHub",
+    "next-generation": "De volgende generatie van het NAS-besturingssysteem",
+    "download-latest": "Download de nieuwste versie gratis",
+    "how-to-install": "Hoe installeren",
+    "zimaclient": "ZimaClient",
+    "qr-code": "QR-code",
+    "how-to-use": "Hoe gebruiken"
   },
   "client": {
     "title": "Download en installeer ZimaClient",
@@ -37,7 +46,7 @@
   "help": {
     "title": "Heeft u hulp nodig?",
     "desc": "Als je meer details of ondersteuning nodig hebt voor je producten, bezoek dan <a {urlP}>Onze Docs</a> of <a {urlC}>Contacteer ons</a>",
-    "support": "24/7 Technische ondersteuning <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel</a>"
+    "support": "24/7 Technische ondersteuning <a {url}>IceWhale.community</a>"
   },
   "menu": {
     "Zima": "Zima",

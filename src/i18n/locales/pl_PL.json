@@ -8,7 +8,16 @@
     "download": "Pobierz",
     "cookie-tip": "Zamykając tę wiadomość, wyrażasz zgodę na używanie plików cookie przez Zima na tym urządzeniu zgodnie z polityką plików cookie, chyba że wyłączyłeś je w ustawieniach przeglądarki.",
     "accept": "Akceptuj",
-    "reject": "Odrzuć"
+    "reject": "Odrzuć",
+    "download-center": "Centrum pobierania",
+    "explore-casaos": "Odkryj CasaOS",
+    "github": "GitHub",
+    "next-generation": "Następna generacja systemu operacyjnego NAS",
+    "download-latest": "Pobierz najnowszą wersję gratis",
+    "how-to-install": "Jak zainstalować",
+    "zimaclient": "ZimaClient",
+    "qr-code": "Kod QR",
+    "how-to-use": "Jak używać"
   },
   "client": {
     "title": "Pobierz i zainstaluj ZimaClient",
@@ -37,7 +46,7 @@
   "help": {
     "title": "Potrzebujesz pomocy?",
     "desc": "Jeśli potrzebujesz szczegółowych informacji lub wsparcia dotyczącego swoich produktów, proszę odwiedzić <a {urlP}>Nasze dokumenty</a> lub <a {urlC}>Skontaktuj się z nami</a>",
-    "support": "Wsparcie techniczne 24/7 przez całą dobę <a {url}>IceWhale.community</a> <br/><a {urlD}>Kanał IceWhale</a>"
+    "support": "Wsparcie techniczne 24/7 przez całą dobę <a {url}>IceWhale.community</a>"
   },
   "menu": {
     "Zima": "Zima",

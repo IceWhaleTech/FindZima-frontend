@@ -8,7 +8,16 @@
     "download": "다운로드",
     "cookie-tip": "이 메시지를 닫으면, 브라우저 설정에서 쿠키를 비활성화하지 않은 경우 Zima의 쿠키 사용에 동의하는 것입니다.",
     "accept": "동의",
-    "reject": "거부"
+    "reject": "거부",
+    "download-center": "다운로드 센터",
+    "explore-casaos": "CasaOS 탐색",
+    "github": "GitHub",
+    "next-generation": "차세대 NAS 운영 체제",
+    "download-latest": "최신 버전 무료 다운로드",
+    "how-to-install": "설치 방법",
+    "zimaclient": "ZimaClient",
+    "qr-code": "QR 코드",
+    "how-to-use": "사용 방법"
   },
   "client": {
     "title": "ZimaClient 다운로드 및 설치",
@@ -37,7 +46,7 @@
   "help": {
     "title": "도움이 필요하신가요?",
     "desc": "제품에 대한 자세한 정보나 지원이 필요하시면, <a {urlP}>문서</a>를 방문하거나 <a {urlC}>연락하기</a>를 클릭하십시오.",
-    "support": "24/7 기술 지원 <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale 채널</a>"
+    "support": "24/7 기술 지원 <a {url}>IceWhale.community</a>"
   },
   "menu": {
     "Zima": "Zima",

@@ -8,7 +8,16 @@
     "download": "ダウンロード",
     "cookie-tip": "お客様のユーザー体験を向上し、通信データを解析するためにCookieを使用します。サイトのブラウジングを続けることにより、お客様は私たちのCookie使用ポリシーに同意するものとします。ブラウザの設定を通じて、Cookieの使用を無効にすることができます。",
     "accept":"同意する",
-    "reject":"拒否する"
+    "reject":"拒否する",
+    "download-center": "ダウンロードセンター",
+    "explore-casaos": "CasaOSを探索",
+    "github": "GitHub",
+    "next-generation": "次世代のNASオペレーティングシステム",
+    "download-latest": "最新バージョンを無料でダウンロード",
+    "how-to-install": "インストール方法",
+    "zimaclient": "ZimaClient",
+    "qr-code": "QRコード",
+    "how-to-use": "使用方法"
   },
   "client":{
     "title":"ZimaClientのダウンロードとインストール",
@@ -36,7 +45,7 @@
   "help":{
     "title": "ヘルプが必要ですか？",
     "desc":"製品に関する詳細やサポートが必要な場合は、<a {urlP}>製品ドキュメント</a>または<a {urlC}>お問い合わせ</a>ページをご覧ください。",
-    "support": "私たちは年中無休で（24時間×7日）、技術サポートを提供しています<br/> <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel </a>"
+    "support": "私たちは年中無休で（24時間×7日）、技術サポートを提供しています<a {url}>IceWhale.community</a>"
   },
   "menu":{
     "Zima": "Zima",

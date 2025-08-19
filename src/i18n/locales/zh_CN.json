@@ -8,7 +8,16 @@
     "download": "下载",
     "cookie-tip": "关闭此消息，您将同意Zima根据其Cookies政策在此设备上使用Cookies，您可以通过浏览器设置禁用它们。",
     "accept":"接受",
-    "reject":"拒绝"
+    "reject":"拒绝",
+    "download-center": "下载中心",
+    "explore-casaos": "探索CasaOS",
+    "github": "GitHub",
+    "next-generation": "下一代NAS操作系统",
+    "download-latest": "免费下载最新版本",
+    "how-to-install": "如何安装",
+    "zimaclient": "Zima客户端",
+    "qr-code": "二维码",
+    "how-to-use": "如何使用"
   },
   "client":{
     "title":"下载并安装zima客户端",
@@ -37,7 +46,7 @@
   "help":{
     "title": "需要帮助?",
     "desc":"如果需要任何关于产品的信息和支持，请访问 <a {urlP}>产品文档</a> 或 <a {urlC}>联系我们</a>",
-    "support": "24/7 全天候支持 <br/> <a {url}>IceWhale.community</a> <br/><a {urlD}>IceWhale Channel </a>"
+    "support": "24/7 全天候支持 <br/> <a {url}>IceWhale.community</a>"
   },
   "menu":{
     "Zima": "Zima",

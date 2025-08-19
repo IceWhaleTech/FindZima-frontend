@@ -1,0 +1,78 @@
+
+@font-face {
+  font-family: "BrittiSans";
+  src: url("../fonts/britti-sans-regular-webfont.woff") format("woff");
+  src: url("../fonts/britti-sans-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  background-color: #F4F4F4;
+
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* css变量定义 */
+  --color-primary:#0057FF
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'BrittiSans', sans-serif !important;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.gpx {
+  @apply px-[4.1vw] sm:px-10;
+}
+.n-modal{
+  @apply mx-[4.1vw] md:mx-auto;
+}
+.n-modal-mask {
+  --modal-scrim-background: rgba(0, 0, 0, 0.48) !important;
+  --modal-overlay-background: rgb(255, 255, 255) !important;
+  backdrop-filter: blur(20px) !important;
+  background: var(--modal-scrim-background, var(--modal-overlay-background)) !important;
+}
+.n-button--secondary {
+  border: 1px solid rgba(51, 51, 51, 0.05) ;
+}
+
+.n-button.white {
+  background: #fff;
+  color: #000;
+}
+.n-button.white:hover {
+  background: #fff;
+}
+.n-button.white .n-button__border {
+  display: none;
+}
+.n-button a:hover {
+  text-decoration: none;
+}
+/* .n-button.white .n-button__state-border {
+  display: none;
+} */
+
+.n-base-close.n-base-close--absolute {
+  @apply w-8 h-8 absolute top-6 md:top-8 right-6 md:right-8;
+}
+.n-base-close.n-base-close--absolute::before {
+  @apply rounded-[12px] w-full h-full bg-[#F5F5F5] border;
+}
