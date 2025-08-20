@@ -8,13 +8,13 @@
     <div class="gpx max-w-screen-xl mx-auto flex justify-between items-center">
       <h3 class="text-base">{{ $t('common.download-center') }}</h3>
       <div class="flex gap-2">
-        <NButton secondary>
+        <!-- <NButton secondary>
           <a href="https://casaos.zimaspace.com/" target="_blank" class="text-inherit hover:underline-none">
             {{ $t('common.explore-casaos') }}
           </a>
-        </NButton>
+        </NButton> -->
         <NButton secondary>
-          <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank" class="text-inherit underline-none">
+          <a href="https://github.com/IceWhaleTech/ZimaOS" target="_blank" class="text-inherit underline-none">
             {{ $t('common.github') }}
           </a>
         </NButton>

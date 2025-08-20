@@ -63,7 +63,8 @@ h1 {
 .n-button.white .n-button__border {
   display: none;
 }
-.n-button a:hover {
+.n-button a {
+  color: inherit;
   text-decoration: none;
 }
 /* .n-button.white .n-button__state-border {

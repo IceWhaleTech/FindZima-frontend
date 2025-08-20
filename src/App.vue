@@ -7,17 +7,17 @@
         <FadeIn>
           <ZimaOS />
         </FadeIn>
-        <FadeIn delay="200">
+        <FadeIn :delay="200">
           <ZimaClient />
-          <FadeIn delay="300" class="flex justify-center mt-4 md:mt-6">
+          <FadeIn :delay="300" class="flex justify-center mt-4 md:mt-6">
             <HowToUse />
           </FadeIn>
         </FadeIn>
         <div class="flex flex-col gap-4">
-          <FadeIn delay="300">
-            <Help class="px-[24px] mt-[4px] py-6 rounded-[30px] border md:px-[80px] md:pt-[39px] md:pb-[35px]" />
+          <FadeIn :delay="300">
+            <Help class="px-[24px] mt-[4px] py-6 rounded-[30px] border md:px-8 md:pt-[39px] md:pb-[35px]" />
           </FadeIn>
-          <FadeIn delay="300">
+          <FadeIn :delay="200">
             <Explore />
           </FadeIn>
         </div>

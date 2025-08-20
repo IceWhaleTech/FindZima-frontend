@@ -6,7 +6,8 @@
         <div  class="flex flex-row md:flex-col gap-2 md:gap-10 border rounded-[30px] p-6 bg-white justify-between">
           <h4 class="text-[20px] leading-[28px]">{{ client.name }}</h4>
           <div v-if="client.isMobile">
-            <div class="hidden md:block">
+            <div>{{$t('client.coming')}}</div>
+            <div v-if="false" class="hidden md:block">
               <n-popover trigger="hover" placement="bottom-start" :show-arrow="false" 
                 style="padding: 0 !important;background-color: transparent !important;border-radius: 14px;">
                 <template #trigger>
@@ -21,7 +22,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" d="M6 4.5L9.5 8L6 11.5" stroke-width="1"/></svg>
               </NButton>
             </div>
-            <div class="block md:hidden">
+            <div v-if="false" class="block md:hidden">
               <NButton :type="currentOS === client.name ? 'primary' : 'default'" :secondary="currentOS !== client.name" @click="openStore(client.storeLink!)">{{ client.storeName }}</NButton>
             </div>
           </div>
