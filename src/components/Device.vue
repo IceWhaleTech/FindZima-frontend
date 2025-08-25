@@ -16,8 +16,8 @@
       </template>
     </div>
     <div class="right w-4/12 h-full" v-if="device || loading">
-      <figure class="image" v-if="device">
-        <img :src="getAssetsFile(device.device_model || device.device_name)" />
+      <figure class="image w-full h-full" v-if="device">
+        <img :src="getAssetsFile(device.device_model || device.device_name)" class="w-auto h-full" />
         <!-- <img :src="device.device_image? 'data:image/svg+xml;base64,'+device.device_image: getAssetsFile(device.device_model || device.device_name)" /> -->
       </figure>
       <Loading v-if="loading" />

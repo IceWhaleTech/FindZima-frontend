@@ -17,7 +17,7 @@
             style="padding: 0 80px;"
           >
             <template v-for="(device, index) in devices">
-              <swiper-slide  v-if="device.lan_ipv4" :key="index" class="pb-2" >
+              <swiper-slide  v-if="device.lan_ipv4" :key="index" class="pb-2 w-[80%]" >
                 <Device :device="device" class="transition hover:shadow-md"></Device>
               </swiper-slide>
             </template>
